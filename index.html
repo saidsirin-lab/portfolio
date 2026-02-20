@@ -516,6 +516,82 @@
         @media (max-width: 1024px) {
             .diff-grid { grid-template-columns: repeat(2, 1fr); }
         }
+        /* ===== NAV ALEPHIC ===== */
+        .nav-alephic {
+            display: inline-flex !important; align-items: center; gap: 0.4rem;
+            background: linear-gradient(135deg, rgba(0,212,255,0.12), rgba(123,47,247,0.12));
+            border: 1px solid rgba(0,212,255,0.25);
+            border-radius: 20px; padding: 0.3rem 0.75rem !important;
+            color: #00d4ff !important; font-weight: 600 !important;
+            transition: all 0.3s ease !important;
+        }
+        .nav-alephic:hover {
+            background: linear-gradient(135deg, rgba(0,212,255,0.22), rgba(123,47,247,0.22)) !important;
+            border-color: rgba(0,212,255,0.5) !important;
+            transform: translateY(-1px);
+        }
+        .nav-alephic::after { display: none !important; }
+        .nav-alephic-logo {
+            width: 20px; height: 20px; border-radius: 5px; object-fit: cover;
+        }
+
+        /* ===== ALEPHIC LABS SECTION ===== */
+        .alephic-section { background: linear-gradient(180deg, #0a0a1a 0%, #0d0d20 50%, #0a0a1a 100%); }
+        .alephic-hero-card {
+            background: linear-gradient(135deg, rgba(0,212,255,0.04), rgba(123,47,247,0.04));
+            border: 1px solid rgba(0,212,255,0.15);
+            border-radius: 20px; padding: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        .alephic-brand-row {
+            display: flex; align-items: center; gap: 1.25rem;
+            margin-bottom: 1.5rem; flex-wrap: wrap;
+        }
+        .alephic-logo {
+            width: 60px; height: 60px; border-radius: 14px;
+            box-shadow: 0 4px 20px rgba(0,212,255,0.25);
+            flex-shrink: 0;
+        }
+        .alephic-brand-text { flex: 1; min-width: 0; }
+        .alephic-name {
+            font-size: 1.6rem; font-weight: 800;
+            background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin: 0 0 0.15rem;
+        }
+        .alephic-sub { font-size: 0.9rem; color: #8888a8; margin: 0; }
+        .alephic-visit-btn { font-size: 0.85rem; padding: 0.65rem 1.4rem; flex-shrink: 0; }
+        .alephic-mission {
+            font-size: 1rem; color: #b0b0c8; line-height: 1.8; margin: 0;
+        }
+        .alephic-pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        .alephic-pillar {
+            background: rgba(255,255,255,0.025);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 16px; padding: 1.75rem;
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+        .alephic-pillar:hover {
+            border-color: rgba(0,212,255,0.2);
+            transform: translateY(-3px);
+        }
+        .alephic-pillar-header {
+            display: flex; align-items: center; gap: 0.9rem; margin-bottom: 1rem;
+        }
+        .alephic-pillar-icon {
+            width: 44px; height: 44px; border-radius: 11px;
+            border: 1px solid; display: flex; align-items: center;
+            justify-content: center; font-size: 1.1rem; flex-shrink: 0;
+        }
+        .alephic-pillar-title {
+            font-size: 1.05rem; font-weight: 700; color: #fff; margin: 0;
+        }
+        .alephic-pillar-desc { font-size: 0.88rem; color: #8888a8; line-height: 1.7; margin: 0; }
+
         @media (max-width: 768px) {
             .hamburger { display: flex; }
             .nav-links {
@@ -530,6 +606,10 @@
             .hero-name { font-size: 2.2rem; }
             .hero-tagline { font-size: 1rem; }
             .hero-subtitle { font-size: 0.95rem; }
+            .alephic-pillars-grid { grid-template-columns: 1fr; }
+            .alephic-brand-row { flex-direction: column; align-items: flex-start; }
+            .alephic-visit-btn { width: 100%; justify-content: center; }
+            .alephic-hero-card { padding: 1.5rem; }
             .about-grid { grid-template-columns: 1fr; gap: 2rem; }
             .diff-grid { grid-template-columns: 1fr; }
             .research-awards-grid { grid-template-columns: 1fr; }
@@ -563,6 +643,7 @@
                 <li><a href="#skills" onclick="closeNav()">Skills</a></li>
                 <li><a href="#education" onclick="closeNav()">Education</a></li>
                 <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+                <li><a href="#alephic-labs" onclick="closeNav()" class="nav-alephic"><img src="alephic-labs-logo.png" alt="" class="nav-alephic-logo" />Alephic Labs</a></li>
                 <li><a href="https://www.linkedin.com/in/alperen-sirin-10794197/" target="_blank" rel="noopener noreferrer" onclick="closeNav()"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
             </ul>
             <div class="hamburger" id="hamburger" onclick="toggleNav()">
@@ -586,8 +667,8 @@
                 </div>
             </div>
             <h1 class="hero-name">Alperen S. Sirin</h1>
-            <p class="hero-tagline">Growth Strategist &bull; AI-Powered Growth Engineer &bull; Data-Driven Marketer</p>
-            <p class="hero-subtitle">I build autonomous growth engines at the intersection of AI, data science, and performance marketing.</p>
+            <p class="hero-tagline">Founder &amp; CEO @ Alephic Labs &bull; Growth Strategist &bull; AI-Powered Growth Engineer</p>
+            <p class="hero-subtitle">I build autonomous growth engines at the intersection of AI, data science, and performance marketing — and founded <a href="#alephic-labs" style="color:#00d4ff;text-decoration:none;font-weight:700;">Alephic Labs</a> to bring that vision to life at scale.</p>
             <div class="hero-cta-group">
                 <a href="#experience" class="btn btn-primary"><i class="fas fa-briefcase"></i> View Experience</a>
                 <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Get In Touch</a>
@@ -611,8 +692,8 @@
                 </div>
                 <div class="about-stats reveal-right">
                     <div class="stat-card">
-                        <span class="stat-number">2M+</span>
-                        <span class="stat-label">App Installs</span>
+                        <span class="stat-number">4M+</span>
+                        <span class="stat-label">App Users</span>
                     </div>
                     <div class="stat-card">
                         <span class="stat-number">$1M+</span>
@@ -777,6 +858,75 @@
     </section>
 
     <!-- ===== SKILLS ===== -->
+    <!-- ========== ALEPHIC LABS ========== -->
+    <section class="alephic-section" id="alephic-labs">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Current Venture</p>
+                <h2 class="section-title">Alephic Labs</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="alephic-hero-card reveal">
+                <div class="alephic-brand-row">
+                    <img src="alephic-labs-logo.png" alt="Alephic Labs" class="alephic-logo" />
+                    <div class="alephic-brand-text">
+                        <h3 class="alephic-name">Alephic Labs</h3>
+                        <p class="alephic-sub">AI-First Company Building at the Frontier</p>
+                    </div>
+                    <a href="https://www.alephiclabs.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary alephic-visit-btn">
+                        <i class="fas fa-external-link-alt"></i> Visit Website
+                    </a>
+                </div>
+                <p class="alephic-mission">
+                    Alephic Labs is an AI-first company operating at the intersection of mobile technology, intelligent marketing, and frontier AI research. Our mission is to build products and systems that harness the full power of AI — from consumer applications used by millions, to enterprise-grade analytics platforms, to the expert networks that train the world's most advanced AI models. We don't just use AI; we build the infrastructure that makes AI work better.
+                </p>
+            </div>
+
+            <div class="alephic-pillars-grid">
+                <div class="alephic-pillar reveal">
+                    <div class="alephic-pillar-header">
+                        <div class="alephic-pillar-icon" style="background:linear-gradient(135deg,#00d4ff22,#00d4ff11);border-color:#00d4ff33;">
+                            <i class="fas fa-mobile-alt" style="color:#00d4ff;"></i>
+                        </div>
+                        <h4 class="alephic-pillar-title">App Studio</h4>
+                    </div>
+                    <p class="alephic-pillar-desc">Building AI-powered mobile apps — personalized chatbots, AI photo & video editors, radar detectors, personalized assessments, and more. Our products are already used by <strong style="color:#00d4ff;">4M+ users</strong> across competitive global markets.</p>
+                </div>
+
+                <div class="alephic-pillar reveal">
+                    <div class="alephic-pillar-header">
+                        <div class="alephic-pillar-icon" style="background:linear-gradient(135deg,#7b2ff722,#7b2ff711);border-color:#7b2ff733;">
+                            <i class="fas fa-globe" style="color:#7b2ff7;"></i>
+                        </div>
+                        <h4 class="alephic-pillar-title">Digital Agency</h4>
+                    </div>
+                    <p class="alephic-pillar-desc">A remote-first agency transforming U.S. startups with AI-driven marketing automation. We work directly with clients — not just connecting, but rebuilding their entire growth engine from the ground up.</p>
+                </div>
+
+                <div class="alephic-pillar reveal">
+                    <div class="alephic-pillar-header">
+                        <div class="alephic-pillar-icon" style="background:linear-gradient(135deg,#10b98122,#10b98111);border-color:#10b98133;">
+                            <i class="fas fa-chart-line" style="color:#10b981;"></i>
+                        </div>
+                        <h4 class="alephic-pillar-title">Growlytics AI</h4>
+                    </div>
+                    <p class="alephic-pillar-desc">An advanced analytics model that ingests web & app user data to deliver LTV curve insights, paid campaign bid management, and creative-level LTV optimization — powered by a proprietary mathematical model feeding into AI agents.</p>
+                </div>
+
+                <div class="alephic-pillar reveal">
+                    <div class="alephic-pillar-header">
+                        <div class="alephic-pillar-icon" style="background:linear-gradient(135deg,#f59e0b22,#f59e0b11);border-color:#f59e0b33;">
+                            <i class="fas fa-brain" style="color:#f59e0b;"></i>
+                        </div>
+                        <h4 class="alephic-pillar-title">Expert Domain Network</h4>
+                    </div>
+                    <p class="alephic-pillar-desc">Frontier AI needs the brightest minds from every field. Our expert network connects PhDs, clinicians, lawyers, and engineers with AI model training projects — earning <strong style="color:#f59e0b;">$75–$200/hr</strong> on flexible, fully remote terms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="skills-section" id="skills">
         <div class="container">
             <div class="section-header reveal">
