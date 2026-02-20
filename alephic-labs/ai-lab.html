@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KT7RC23B1B"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KT7RC23B1B');</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Lab — Alephic Labs | Expert Talent Network for AI Development</title>
+  <meta name="description" content="Alephic Labs AI Lab connects domain experts across 100+ fields with cutting-edge AI development projects. Earn $75–$200/hr working part-time, remotely and flexibly. Apply today — matching takes under 3 weeks." />
+  <meta name="keywords" content="AI expert jobs, AI training experts, earn money as an expert, remote AI work, AI data annotation, domain expert AI, RLHF expert, AI model training, AI feedback expert, expert AI work, part-time AI jobs, remote expert work, AI research jobs, AI annotation specialist" />
+  <meta name="author" content="Alephic Labs" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://alephiclabs.com/ai-lab" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Alephic Labs" />
+  <meta property="og:title" content="AI Lab — Alephic Labs | Expert Talent Network for AI Development" />
+  <meta property="og:description" content="Join Alephic Labs' AI expert network. Earn $75–$200/hr on part-time, remote AI development projects matched to your domain expertise. 100+ fields accepted." />
+  <meta property="og:url" content="https://alephiclabs.com/ai-lab" />
+  <meta property="og:image" content="https://alephiclabs.com/logo-full.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Lab — Alephic Labs | Expert Talent for AI Development" />
+  <meta name="twitter:description" content="Earn $75–$200/hr contributing your expertise to frontier AI projects. Part-time, remote, flexible. Apply now — matching in under 3 weeks." />
+  <meta name="twitter:image" content="https://alephiclabs.com/logo-full.png" />
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="logo-icon.png" />
+
+  <!-- Structured Data: JobPosting-style for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Alephic Labs AI Lab",
+    "url": "https://alephiclabs.com/ai-lab",
+    "logo": "https://alephiclabs.com/logo-icon.png",
+    "description": "Alephic Labs AI Lab connects domain experts across 100+ fields with AI development projects. Experts earn $75–$200/hr working part-time and remotely.",
+    "email": "ailab@alephiclabs.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "areaServed": "Worldwide"
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much can I earn?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Experts earn between $75 and $200 per hour depending on domain, experience level, and project complexity. Most experts work 5–20 hours per week on a flexible schedule."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kinds of projects will I work on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Projects involve using your domain expertise to help train, evaluate, and improve AI systems. This includes reviewing AI-generated content for accuracy, creating expert reference material, and providing structured feedback on AI reasoning and outputs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to get matched?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After submitting your application, our team reviews your background and qualifications. The full assessment and matching process takes no more than 3 weeks from application submission."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this full-time or part-time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All positions are part-time, contractual, and remote. You can work as few as 5 hours or as many as 40 hours per week depending on project availability and your availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What qualifications do I need?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We look for deep expertise in your field — typically demonstrated through advanced degrees, significant professional experience, publications, or a combination of these. We accept experts from 100+ domains."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ── AI Lab specific overrides ── */
+    .domain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    .domain-pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 0.65rem 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all var(--transition-fast);
+    }
+    .domain-pill:hover {
+      border-color: var(--accent-cyan);
+      color: var(--text-primary);
+    }
+    .domain-pill__dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .domain-category {
+      margin-bottom: 2.5rem;
+    }
+    .domain-category__title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--text-dim);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .domain-category__title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border-color);
+    }
+    .pay-card {
+      background: linear-gradient(135deg, rgba(0,212,255,0.06), rgba(139,92,246,0.06));
+      border: 1px solid rgba(0,212,255,0.15);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      text-align: center;
+    }
+    .pay-range {
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .benefit-item:last-child { border-bottom: none; }
+    .benefit-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(0,212,255,0.1);
+      border: 1px solid rgba(0,212,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+    .benefit-text strong {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+    }
+    .benefit-text span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .qual-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all var(--transition-fast);
+    }
+    .qual-card:hover {
+      border-color: rgba(0,212,255,0.3);
+    }
+    .qual-num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--accent-cyan);
+      line-height: 1;
+      min-width: 2rem;
+    }
+
+    /* ── AI Flow Diagram ── */
+    .aiflow-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .aiflow-wrap { grid-template-columns: 1fr; }
+      .aiflow { display: none; }
+    }
+
+    /* Animated gradient border wrapper */
+    .aiflow-outer {
+      position: relative;
+      border-radius: 22px;
+      padding: 1.5px;
+      background: linear-gradient(135deg, rgba(0,212,255,0.3), rgba(139,92,246,0.3), rgba(16,185,129,0.3), rgba(245,158,11,0.3));
+      background-size: 300% 300%;
+      animation: borderShift 6s ease-in-out infinite;
+      margin-top: 2.5rem;
+      transition: box-shadow 0.6s ease;
+    }
+    @keyframes borderShift {
+      0%,100% { background-position: 0% 50%; }
+      50%      { background-position: 100% 50%; }
+    }
+
+    .aiflow {
+      position: relative;
+      padding: 1.5rem 1.4rem 1.1rem;
+      background: linear-gradient(160deg, #07071c 0%, #0d0d28 100%);
+      border-radius: 21px;
+      overflow: hidden;
+    }
+    /* subtle inner grid */
+    .aiflow::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none;
+    }
+
+    /* Step progress dots */
+    .aiflow__progress {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 1.1rem;
+      position: relative;
+      z-index: 1;
+    }
+    .aiflow__plabel {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: rgba(255,255,255,0.3);
+      margin-right: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .aiflow__plabel-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      box-shadow: 0 0 6px var(--accent-cyan);
+      animation: aiPulse 1.8s ease-in-out infinite;
+    }
+    @keyframes aiPulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50%      { opacity: 0.35; transform: scale(0.65); }
+    }
+    .aiflow__pdot {
+      width: 20px; height: 4px;
+      border-radius: 2px;
+      background: rgba(255,255,255,0.1);
+      transition: background 0.4s ease, box-shadow 0.4s ease, width 0.3s ease;
+    }
+    .aiflow__pdot.active {
+      width: 32px;
+      box-shadow: 0 0 8px currentColor;
+    }
+
+    .aiflow__node {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 0.85rem 1rem;
+      border-radius: 13px;
+      border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.025);
+      transition: border-color 0.5s ease, box-shadow 0.5s ease,
+                  transform 0.5s cubic-bezier(0.34,1.56,0.64,1), background 0.5s ease;
+      cursor: default;
+      position: relative;
+      z-index: 1;
+    }
+    .aiflow__node.active {
+      transform: translateX(6px) scale(1.015);
+    }
+
+    /* pulsing ring on active icon */
+    .aiflow__icon-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+    .aiflow__icon-ring {
+      position: absolute;
+      inset: -5px;
+      border-radius: 14px;
+      border: 1.5px solid transparent;
+      opacity: 0;
+      transition: opacity 0.4s ease, border-color 0.4s ease;
+      animation: ringPulse 1.4s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes ringPulse {
+      0%,100% { transform: scale(1);   opacity: 0.6; }
+      50%      { transform: scale(1.12); opacity: 0; }
+    }
+    .aiflow__node.active .aiflow__icon-ring { opacity: 1; }
+
+    .aiflow__icon {
+      font-size: 1.25rem;
+      width: 42px; height: 42px;
+      border-radius: 11px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.45s ease, border-color 0.45s ease, box-shadow 0.45s ease;
+    }
+
+    .aiflow__text { flex: 1; min-width: 0; }
+    .aiflow__title {
+      font-size: 0.86rem; font-weight: 700;
+      color: var(--text-primary); line-height: 1.2;
+    }
+    .aiflow__sub {
+      font-size: 0.72rem; color: rgba(255,255,255,0.38);
+      margin-top: 3px; line-height: 1.4;
+    }
+    .aiflow__badge {
+      flex-shrink: 0;
+      font-size: 0.6rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.8px;
+      padding: 0.22rem 0.55rem;
+      border-radius: 5px;
+      border: 1px solid rgba(255,255,255,0.07);
+      color: rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.04);
+      transition: color 0.45s ease, border-color 0.45s ease, background 0.45s ease, box-shadow 0.45s ease;
+    }
+
+    .aiflow__connector {
+      display: flex;
+      align-items: flex-start;
+      padding-left: 20px;
+      height: 28px;
+      position: relative;
+      z-index: 1;
+    }
+    .aiflow__line {
+      width: 2px; height: 100%;
+      background: rgba(255,255,255,0.07);
+      border-radius: 2px;
+      position: relative;
+    }
+    .aiflow__dot {
+      position: absolute;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      left: -4px; top: -10px;
+      opacity: 0;
+      filter: blur(0.5px);
+    }
+    .aiflow__dot2 {
+      position: absolute;
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      left: -1.5px; top: -5px;
+      opacity: 0;
+      filter: blur(1px);
+    }
+    @keyframes dotSlide {
+      0%   { top: -4px; opacity: 0; }
+      8%   { opacity: 1; }
+      85%  { opacity: 0.9; }
+      100% { top: 30px; opacity: 0; }
+    }
+    @keyframes dotSlide2 {
+      0%   { top: -4px; opacity: 0; }
+      15%  { opacity: 0.5; }
+      90%  { opacity: 0.3; }
+      100% { top: 30px; opacity: 0; }
+    }
+
+    .aiflow__loop {
+      margin-top: 0.75rem;
+      text-align: center;
+      font-size: 0.66rem;
+      color: rgba(255,255,255,0.16);
+      letter-spacing: 0.5px;
+      position: relative; z-index: 1;
+    }
+
+    /* ── Domain Picker ── */
+    .domain-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+    }
+    .domain-trigger:hover { border-color: var(--accent-cyan); }
+    .domain-trigger__arrow { font-size: 0.75rem; color: var(--text-muted); transition: transform 0.2s; }
+    .domain-trigger.open .domain-trigger__arrow { transform: rotate(180deg); }
+
+    .domain-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      align-items: center;
+      justify-content: center;
+    }
+    .domain-modal-overlay.active { display: flex; }
+
+    .domain-modal {
+      background: var(--bg-secondary, #0e0e24);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      width: min(720px, 95vw);
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+    }
+    .domain-modal__header {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .domain-modal__header h3 { margin: 0; font-size: 1rem; font-weight: 700; }
+    .domain-modal__close {
+      background: none; border: none; color: var(--text-muted);
+      cursor: pointer; font-size: 1.4rem; line-height: 1; padding: 0.2rem 0.4rem;
+      border-radius: 6px; transition: background 0.15s, color 0.15s;
+    }
+    .domain-modal__close:hover { background: rgba(255,255,255,0.06); color: var(--text-primary); }
+
+    .domain-modal__body {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .domain-modal__cats {
+      width: 210px;
+      flex-shrink: 0;
+      border-right: 1px solid var(--border-color);
+      overflow-y: auto;
+      padding: 0.5rem 0;
+    }
+    .domain-modal__cat-item {
+      padding: 0.65rem 1.1rem;
+      font-size: 0.82rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background 0.12s, color 0.12s;
+      border-left: 2px solid transparent;
+    }
+    .domain-modal__cat-item:hover { background: rgba(255,255,255,0.04); color: var(--text-primary); }
+    .domain-modal__cat-item.active {
+      background: rgba(0,212,255,0.06);
+      color: var(--accent-cyan);
+      border-left-color: var(--accent-cyan);
+      font-weight: 600;
+    }
+
+    .domain-modal__fields {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem 1.25rem;
+    }
+    .domain-modal__fields-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-dim, var(--text-muted));
+      margin-bottom: 0.75rem;
+    }
+    .domain-modal__field-item {
+      padding: 0.6rem 0.9rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.12s, color 0.12s;
+      margin-bottom: 2px;
+    }
+    .domain-modal__field-item:hover {
+      background: rgba(0,212,255,0.08);
+      color: var(--text-primary);
+    }
+    .domain-modal__field-item.selected {
+      background: rgba(16,185,129,0.12);
+      color: #10b981;
+      font-weight: 600;
+    }
+    .domain-modal__placeholder {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      padding: 1rem 0.5rem;
+    }
+
+    @media (max-width: 560px) {
+      .domain-modal__body { flex-direction: column; }
+      .domain-modal__cats { width: 100%; border-right: none; border-bottom: 1px solid var(--border-color); max-height: 160px; }
+    }
+
+    /* ── Application Wizard ── */
+    #app-wizard-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1500;
+      background: rgba(0,0,0,0.82);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+    #app-wizard-overlay.active { display: flex; }
+    #app-wizard {
+      background: var(--bg-secondary, #0e0e24);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      width: min(580px, 100%);
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 32px 96px rgba(0,0,0,0.7);
+      overflow: hidden;
+    }
+    .wiz__topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 1.5rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      flex-shrink: 0;
+    }
+    .wiz__brand {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--text-dim, var(--text-muted));
+    }
+    .wiz__close {
+      width: 30px; height: 30px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s, color 0.2s;
+      line-height: 1;
+    }
+    .wiz__close:hover { background: rgba(255,255,255,0.12); color: var(--text-primary); }
+    .wiz__progress-track {
+      height: 3px;
+      background: rgba(255,255,255,0.07);
+      flex-shrink: 0;
+    }
+    .wiz__progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+      transition: width 0.4s cubic-bezier(0.4,0,0.2,1);
+      border-radius: 0 2px 2px 0;
+    }
+    .wiz__meta {
+      padding: 1.1rem 1.5rem 0.25rem;
+      flex-shrink: 0;
+    }
+    .wiz__step-counter {
+      font-size: 0.72rem;
+      color: var(--accent-cyan);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 0.3rem;
+    }
+    .wiz__step-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 0 0 0.2rem;
+    }
+    .wiz__step-sub {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      margin: 0 0 0.75rem;
+    }
+    .wiz__body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 0.5rem 1.5rem 1rem;
+    }
+    .wiz__step { display: none; }
+    .wiz__step.active { display: block; }
+    .wiz__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--border-color);
+      flex-shrink: 0;
+      background: var(--bg-secondary, #0e0e24);
+    }
+    .wiz__success {
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    .wiz__success-icon { font-size: 3rem; line-height: 1; margin-bottom: 1rem; }
+    .wiz__success-title { font-size: 1.35rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.6rem; }
+    .wiz__success-msg { font-size: 0.875rem; color: var(--text-muted); line-height: 1.65; }
+    @media (max-width: 480px) {
+      #app-wizard { border-radius: 16px; }
+      .wiz__topbar, .wiz__meta, .wiz__body, .wiz__footer { padding-left: 1rem; padding-right: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="favicon.svg" alt="Alephic Labs" class="nav__logo-icon" style="border-radius:8px;" />
+        Alephic Labs
+      </a>
+      <div class="nav__links">
+        <a href="/" class="nav__link">Home</a>
+        <a href="app-studio" class="nav__link">App Studio</a>
+        <a href="agency" class="nav__link">Agency</a>
+        <a href="growlytics" class="nav__link">Growlytics AI</a>
+        <a href="ai-lab" class="nav__link active">AI Lab</a>
+        <a href="contact" class="nav__cta">Get in Touch</a>
+      </div>
+      <button class="nav__toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="/">Home</a>
+    <a href="app-studio">App Studio</a>
+    <a href="agency">Agency</a>
+    <a href="growlytics">Growlytics AI</a>
+    <a href="ai-lab">AI Lab</a>
+    <a href="contact">Contact</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero hero--short">
+    <div class="hero__grid"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="container" style="position:relative;z-index:2;padding-top:5.5rem;">
+      <div class="aiflow-wrap">
+
+        <!-- LEFT: text -->
+        <div class="hero__content" style="text-align:left;max-width:none;">
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            Now Accepting Applications
+          </div>
+          <h1>Your Expertise.<br/><span class="text-gradient">The AI Revolution.</span></h1>
+          <p class="hero__description">
+            Frontier AI is being built today — and it needs the brightest minds from every field. Join Alephic Labs' expert network and earn <strong>$75–$200/hr</strong> contributing your domain knowledge to the world's most ambitious AI projects. Part-time, remote, flexible.
+          </p>
+          <div class="hero__actions">
+            <a href="#apply" class="btn btn--primary btn--lg">Apply Now <span class="btn__icon">&darr;</span></a>
+            <a href="#how-it-works" class="btn btn--secondary btn--lg">How It Works</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: animated flow diagram -->
+        <div class="aiflow-outer" id="aiflow-outer">
+          <div class="aiflow">
+
+            <!-- Progress tracker -->
+            <div class="aiflow__progress">
+              <span class="aiflow__plabel">
+                <span class="aiflow__plabel-dot"></span>
+                Live
+              </span>
+              <span class="aiflow__pdot" data-i="0"></span>
+              <span class="aiflow__pdot" data-i="1"></span>
+              <span class="aiflow__pdot" data-i="2"></span>
+              <span class="aiflow__pdot" data-i="3"></span>
+              <span class="aiflow__pdot" data-i="4"></span>
+            </div>
+
+            <div class="aiflow__node" data-color="#00d4ff">
+              <div class="aiflow__icon-wrap">
+                <div class="aiflow__icon-ring"></div>
+                <div class="aiflow__icon">🧠</div>
+              </div>
+              <div class="aiflow__text">
+                <div class="aiflow__title">Your Expertise</div>
+                <div class="aiflow__sub">Deep knowledge from any of 100+ fields</div>
+              </div>
+              <div class="aiflow__badge">You</div>
+            </div>
+
+            <div class="aiflow__connector">
+              <div class="aiflow__line">
+                <div class="aiflow__dot"></div>
+                <div class="aiflow__dot2"></div>
+              </div>
+            </div>
+
+            <div class="aiflow__node" data-color="#8b5cf6">
+              <div class="aiflow__icon-wrap">
+                <div class="aiflow__icon-ring"></div>
+                <div class="aiflow__icon">⚡</div>
+              </div>
+              <div class="aiflow__text">
+                <div class="aiflow__title">AI Project Match</div>
+                <div class="aiflow__sub">Paired with frontier model training tasks</div>
+              </div>
+              <div class="aiflow__badge">Alephic</div>
+            </div>
+
+            <div class="aiflow__connector">
+              <div class="aiflow__line">
+                <div class="aiflow__dot"></div>
+                <div class="aiflow__dot2"></div>
+              </div>
+            </div>
+
+            <div class="aiflow__node" data-color="#3b82f6">
+              <div class="aiflow__icon-wrap">
+                <div class="aiflow__icon-ring"></div>
+                <div class="aiflow__icon">🤖</div>
+              </div>
+              <div class="aiflow__text">
+                <div class="aiflow__title">Models Improve</div>
+                <div class="aiflow__sub">AI evolves from your expert-level insight</div>
+              </div>
+              <div class="aiflow__badge">AI</div>
+            </div>
+
+            <div class="aiflow__connector">
+              <div class="aiflow__line">
+                <div class="aiflow__dot"></div>
+                <div class="aiflow__dot2"></div>
+              </div>
+            </div>
+
+            <div class="aiflow__node" data-color="#10b981">
+              <div class="aiflow__icon-wrap">
+                <div class="aiflow__icon-ring"></div>
+                <div class="aiflow__icon">💰</div>
+              </div>
+              <div class="aiflow__text">
+                <div class="aiflow__title">You Get Paid</div>
+                <div class="aiflow__sub">$75–$200/hr · bi-weekly · worldwide</div>
+              </div>
+              <div class="aiflow__badge">$$$</div>
+            </div>
+
+            <div class="aiflow__connector">
+              <div class="aiflow__line">
+                <div class="aiflow__dot"></div>
+                <div class="aiflow__dot2"></div>
+              </div>
+            </div>
+
+            <div class="aiflow__node" data-color="#f59e0b">
+              <div class="aiflow__icon-wrap">
+                <div class="aiflow__icon-ring"></div>
+                <div class="aiflow__icon">🚀</div>
+              </div>
+              <div class="aiflow__text">
+                <div class="aiflow__title">Your Career Accelerates</div>
+                <div class="aiflow__sub">Impact, credentials &amp; a stronger portfolio</div>
+              </div>
+              <div class="aiflow__badge">∞</div>
+            </div>
+
+            <div class="aiflow__loop">↺ &nbsp;your knowledge compounds with every cycle</div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== QUICK STATS ========== -->
+  <section class="section section--alt" style="padding:2rem 0;">
+    <div class="container">
+      <div class="stats reveal">
+        <div class="stat">
+          <div class="stat__value" style="font-size:clamp(1.1rem,2.2vw,1.55rem);letter-spacing:-0.3px;">$75–$200</div>
+          <div class="stat__label">Per Hour</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value" data-count="100" data-suffix="+">0</div>
+          <div class="stat__label">Expert Domains</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value" data-count="3" data-suffix=" Wks">0</div>
+          <div class="stat__label">To First Project</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">100%</div>
+          <div class="stat__label">Remote &amp; Flexible</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="text-center mb-8 reveal">
+        <span class="section-label" style="justify-content:center;">The Process</span>
+        <h2>From Application <span class="text-gradient">to Earning</span></h2>
+        <p class="section-subtitle mx-auto mt-2">
+          A streamlined, transparent process that gets you to your first paid project in under three weeks.
+        </p>
+      </div>
+
+      <div class="process reveal">
+        <div class="process__step">
+          <div class="process__number">01</div>
+          <h4>Apply</h4>
+          <p>Complete the application below. Tell us about your background, domain expertise, education, and availability. It takes about 10 minutes.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number">02</div>
+          <h4>Assessment</h4>
+          <p>Our team reviews your qualifications. For select domains, we may invite you to complete a brief skill assessment to verify depth of expertise.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number">03</div>
+          <h4>Match</h4>
+          <p>We pair you with a project and partner organization that aligns with your specific domain knowledge, experience level, and schedule.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number">04</div>
+          <h4>Earn</h4>
+          <p>Start working remotely on flexible hours. Get paid $75–$200/hr. The entire process from application to first project takes no more than 3 weeks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHAT YOU'LL DO ========== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="feature-block reveal">
+        <div>
+          <span class="section-label">The Work</span>
+          <h2>Make AI Smarter.<br/><span class="text-gradient">In Your Field.</span></h2>
+          <p class="mt-3" style="color:var(--text-muted);line-height:1.8;max-width:500px;">
+            The most advanced AI systems in the world are only as good as the expert knowledge that trains them. Your role is to bring depth, accuracy, and real-world expertise to the AI development pipeline.
+          </p>
+          <ul class="feature-list mt-4">
+            <li>Review and evaluate AI-generated content for accuracy and quality in your field</li>
+            <li>Create expert-level reference content that trains AI on specialized topics</li>
+            <li>Provide structured feedback on AI reasoning and factual outputs</li>
+            <li>Solve domain-specific problems that require genuine expert-level knowledge</li>
+            <li>Help develop evaluation benchmarks and assessment criteria for AI systems</li>
+          </ul>
+          <div class="mt-4" style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+            <span class="tag">Part-Time</span>
+            <span class="tag tag--purple">Remote</span>
+            <span class="tag tag--green">Contractual</span>
+            <span class="tag tag--orange">Flexible Hours</span>
+          </div>
+        </div>
+        <div>
+          <div class="benefit-item">
+            <div class="benefit-icon">💰</div>
+            <div class="benefit-text">
+              <strong>$75 – $200 per hour</strong>
+              <span>Competitive hourly rates based on domain complexity and experience level. Payments are processed bi-weekly.</span>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🌍</div>
+            <div class="benefit-text">
+              <strong>Fully Remote, Worldwide</strong>
+              <span>Work from anywhere in the world. All you need is a computer and internet connection.</span>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">⏱️</div>
+            <div class="benefit-text">
+              <strong>Flexible Schedule</strong>
+              <span>Set your own hours. Work 5–40 hours per week depending on project needs and your availability.</span>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">📋</div>
+            <div class="benefit-text">
+              <strong>Short-Term Contracts</strong>
+              <span>Project-based engagements. No long-term commitments required — renew or exit based on your schedule.</span>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🚀</div>
+            <div class="benefit-text">
+              <strong>Work on Frontier AI</strong>
+              <span>Contribute directly to AI systems that are shaping the future of your industry and the world.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHO QUALIFIES ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-8 reveal">
+        <span class="section-label" style="justify-content:center;">Eligibility</span>
+        <h2>Who We're <span class="text-gradient">Looking For</span></h2>
+        <p class="section-subtitle mx-auto mt-2">
+          We recruit experts from virtually every field of human knowledge. If you have deep expertise in any domain, we want to hear from you.
+        </p>
+      </div>
+
+      <div class="grid grid-3 reveal">
+        <div class="qual-card">
+          <div class="qual-num">🎓</div>
+          <div>
+            <h4 style="margin-bottom:0.5rem;">Academics &amp; Researchers</h4>
+            <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.6;">PhD holders, postdoctoral researchers, university faculty, and active researchers in any discipline. Your publication record and institutional expertise are highly valued.</p>
+          </div>
+        </div>
+        <div class="qual-card">
+          <div class="qual-num">💼</div>
+          <div>
+            <h4 style="margin-bottom:0.5rem;">Practicing Professionals</h4>
+            <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.6;">Attorneys, physicians, engineers, financial analysts, and other licensed professionals with 3+ years of hands-on industry experience in their field.</p>
+          </div>
+        </div>
+        <div class="qual-card">
+          <div class="qual-num">🔬</div>
+          <div>
+            <h4 style="margin-bottom:0.5rem;">Domain Specialists</h4>
+            <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.6;">Deep subject-matter experts — whether from industry, government, nonprofit, or independent practice — with demonstrated mastery in a specialized field.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DOMAINS ========== -->
+  <section class="section section--alt" id="domains">
+    <div class="container">
+      <div class="text-center mb-8 reveal">
+        <span class="section-label" style="justify-content:center;">Fields of Expertise</span>
+        <h2>100+ Domains <span class="text-gradient">Accepted</span></h2>
+        <p class="section-subtitle mx-auto mt-2">
+          We recruit from virtually every field of knowledge. Below is a non-exhaustive list of domains we actively source from.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin-bottom:2rem;">
+
+          <div class="domain-browse-card" data-cat="0" style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid #ef4444;border-radius:var(--radius-sm);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.75rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s;">
+            <span style="font-size:1.3rem;">🤖</span>
+            <div>
+              <div style="font-weight:700;font-size:0.9rem;">AI &amp; Computer Science</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">10 specializations — click to explore</div>
+            </div>
+          </div>
+
+          <div class="domain-browse-card" data-cat="1" style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid #f59e0b;border-radius:var(--radius-sm);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.75rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s;">
+            <span style="font-size:1.3rem;">∑</span>
+            <div>
+              <div style="font-weight:700;font-size:0.9rem;">Mathematics &amp; Statistics</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">6 specializations — click to explore</div>
+            </div>
+          </div>
+
+          <div class="domain-browse-card" data-cat="2" style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid #06b6d4;border-radius:var(--radius-sm);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.75rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s;">
+            <span style="font-size:1.3rem;">⚛️</span>
+            <div>
+              <div style="font-weight:700;font-size:0.9rem;">Physical Sciences</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">9 specializations — click to explore</div>
+            </div>
+          </div>
+
+          <div class="domain-browse-card" data-cat="3" style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid #10b981;border-radius:var(--radius-sm);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.75rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s;">
+            <span style="font-size:1.3rem;">🧬</span>
+            <div>
+              <div style="font-weight:700;font-size:0.9rem;">Life Sciences &amp; Medicine</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">12 specializations — click to explore</div>
+            </div>
+          </div>
+
+          <div class="domain-browse-card" data-cat="4" style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid #8b5cf6;border-radius:var(--radius-sm);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.75rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s;">
+            <span style="font-size:1.3rem;">⚙️</span>
+            <div>
+              <div style="font-weight:700;font-size:0.9rem;">Engineering</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">8 specializations — click to explore</div>
+            </div>
+          </div>
+
+          <div class="domain-browse-card" data-cat="5" style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid #f97316;border-radius:var(--radius-sm);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.75rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s;">
+            <span style="font-size:1.3rem;">⚖️</span>
+            <div>
+              <div style="font-weight:700;font-size:0.9rem;">Law &amp; Regulatory</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">10 specializations — click to explore</div>
+            </div>
+          </div>
+
+          <div class="domain-browse-card" data-cat="6" style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid #ec4899;border-radius:var(--radius-sm);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.75rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s;">
+            <span style="font-size:1.3rem;">📈</span>
+            <div>
+              <div style="font-weight:700;font-size:0.9rem;">Finance &amp; Economics</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">8 specializations — click to explore</div>
+            </div>
+          </div>
+
+          <div class="domain-browse-card" data-cat="7" style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid #6366f1;border-radius:var(--radius-sm);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.75rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s;">
+            <span style="font-size:1.3rem;">🏛️</span>
+            <div>
+              <div style="font-weight:700;font-size:0.9rem;">Humanities &amp; Social Sciences</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">10 specializations — click to explore</div>
+            </div>
+          </div>
+
+          <div class="domain-browse-card" data-cat="8" style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid #84cc16;border-radius:var(--radius-sm);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.75rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s;">
+            <span style="font-size:1.3rem;">🎓</span>
+            <div>
+              <div style="font-weight:700;font-size:0.9rem;">Education &amp; Pedagogy</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">5 specializations — click to explore</div>
+            </div>
+          </div>
+
+          <div class="domain-browse-card" data-cat="9" style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid #94a3b8;border-radius:var(--radius-sm);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.75rem;cursor:pointer;transition:border-color 0.2s,box-shadow 0.2s;">
+            <span style="font-size:1.3rem;">🎨</span>
+            <div>
+              <div style="font-weight:700;font-size:0.9rem;">Creative, Design &amp; Media</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;">6 specializations — click to explore</div>
+            </div>
+          </div>
+
+        </div>
+        <p style="text-align:center;color:var(--text-dim);font-size:0.85rem;">
+          Click any category to see its specializations. Select yours in the application form below.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== APPLICATION SECTION ========== -->
+  <section class="section" id="apply">
+    <div class="container">
+      <div class="mb-8 reveal" style="text-align:center;">
+        <span class="section-label" style="justify-content:center;">Join the Network</span>
+        <h2>Expert <span class="text-gradient">Application</span></h2>
+        <p class="section-subtitle mt-2" style="max-width:540px;margin-left:auto;margin-right:auto;">
+          Apply to the Alephic Labs AI expert network. We review every application carefully and will be in touch within 5 business days. The full matching process takes no more than 3 weeks.
+        </p>
+        <button id="start-application-btn" class="btn btn--primary btn--lg mt-4">
+          Start Application <span class="btn__icon">&rarr;</span>
+        </button>
+        <p style="font-size:0.78rem;color:var(--text-dim);margin-top:1rem;">Takes about 10 minutes &mdash; 7 quick steps</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section section--alt">
+    <div class="container container--narrow">
+      <div class="text-center mb-8 reveal">
+        <span class="section-label" style="justify-content:center;">FAQ</span>
+        <h2>Common <span class="text-gradient">Questions</span></h2>
+      </div>
+
+      <div class="accordion reveal">
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            How much can I earn?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              Experts earn between <strong>$75 and $200 per hour</strong> depending on domain, depth of expertise, and project complexity. Higher-demand and more technical domains — such as medicine, law, and specialized STEM fields — typically command higher rates. Payments are processed bi-weekly via secure transfer.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            What kinds of tasks will I work on?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              Tasks vary by project but typically involve using your domain expertise to evaluate AI-generated content, provide expert-level feedback on AI reasoning, create high-quality reference material, or solve domain-specific problems that require genuine expert knowledge. All tasks are structured, well-defined, and can be completed independently on your own schedule.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            How long does the matching process take?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              After submitting your application, our team carefully reviews your background and qualifications. The full process — from application to your first project assignment — takes <strong>no more than 3 weeks</strong>. For some domains, we may ask you to complete a brief skill assessment before final matching.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            Is this full-time work?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              No. All positions are <strong>part-time, contractual, and fully remote</strong>. You decide how many hours you work each week — from as few as 5 hours to up to 40 hours depending on project availability. There are no minimum hour commitments and no long-term obligations.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            Do I need a PhD or advanced degree?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              Not necessarily. While advanced degrees are a strong signal of expertise, we also accept professionals with significant industry experience, licensure, publications, or other evidence of deep domain knowledge. We evaluate each applicant holistically based on the depth and relevance of their expertise.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            Can I work from outside the United States?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              Yes. We accept experts from around the world. All work is conducted remotely, and we support international payment methods. Some projects may require English proficiency depending on the nature of the tasks.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            What happens after I apply?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              Our team reviews your application within 5 business days. If your background matches active project criteria, we'll send you project options directly matched to your expertise profile. Once you accept a project, you'll receive an onboarding package and begin your first paid assignment — no interviews or calls required.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section">
+    <div class="container reveal">
+      <span class="section-label" style="justify-content:center;">Ready to Apply?</span>
+      <h2>Join the <span class="text-gradient">AI Revolution</span></h2>
+      <p>Your expertise is in demand. Apply today and get matched with a project in under 3 weeks.</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;">
+        <a href="#apply" class="btn btn--primary">Apply Now</a>
+        <a href="contact" class="btn btn--secondary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">
+            <img src="favicon.svg" alt="" width="28" height="28" style="border-radius:6px;" /> Alephic Labs
+          </div>
+          <p>AI-first company building at the intersection of mobile apps, digital services, intelligent marketing analytics, and AI expert sourcing.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Verticals</h4>
+          <a href="app-studio">App Studio</a>
+          <a href="agency">Digital Agency</a>
+          <a href="growlytics">Growlytics AI</a>
+          <a href="ai-lab">AI Lab</a>
+        </div>
+        <div class="footer__col">
+          <h4>AI Lab</h4>
+          <a href="ai-lab#how-it-works">How It Works</a>
+          <a href="ai-lab#domains">Domains</a>
+          <a href="ai-lab#apply">Apply Now</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="contact">Contact</a>
+          <a href="mailto:contact@alephiclabs.com">Email Us</a>
+          <a href="privacy">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Alephic Labs. All rights reserved.</span>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/alperen-sirin-10794197/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== APPLICATION WIZARD MODAL ========== -->
+  <div id="app-wizard-overlay" role="dialog" aria-modal="true" aria-label="Expert Application">
+    <div id="app-wizard">
+
+      <!-- Top bar -->
+      <div class="wiz__topbar">
+        <span class="wiz__brand">Expert Application</span>
+        <button class="wiz__close" id="wiz-close" aria-label="Close">&times;</button>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="wiz__progress-track">
+        <div class="wiz__progress-fill" id="wiz-progress-fill" style="width:0%"></div>
+      </div>
+
+      <!-- Step meta (updated by JS) -->
+      <div class="wiz__meta">
+        <div class="wiz__step-counter" id="wiz-step-counter">Step 1 of 7</div>
+        <h3 class="wiz__step-title" id="wiz-step-title">Basic Information</h3>
+        <p class="wiz__step-sub" id="wiz-step-sub">Let's start with the basics.</p>
+      </div>
+
+      <!-- Scrollable steps body -->
+      <div class="wiz__body" id="wiz-body">
+
+        <!-- STEP 1: Basic Info -->
+        <div class="wiz__step active" id="wiz-step-1">
+          <div class="form__group">
+            <label class="form__label">Full Name <span>*</span></label>
+            <input type="text" class="form__input" id="w-name" placeholder="Dr. Jane Smith" />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Email Address <span>*</span></label>
+            <input type="email" class="form__input" id="w-email" placeholder="jane@university.edu" />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Phone Number <span>*</span></label>
+            <input type="tel" class="form__input" id="w-phone" placeholder="+1 (555) 000-0000" />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Country of Residence <span>*</span></label>
+            <input type="text" class="form__input" id="w-country" placeholder="United States" />
+          </div>
+        </div>
+
+        <!-- STEP 2: Online Presence -->
+        <div class="wiz__step" id="wiz-step-2">
+          <div class="form__group">
+            <label class="form__label">LinkedIn Profile</label>
+            <input type="url" class="form__input" id="w-linkedin" placeholder="https://linkedin.com/in/yourprofile" />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Portfolio / GitHub / Google Scholar URL</label>
+            <input type="url" class="form__input" id="w-portfolio" placeholder="https://scholar.google.com/..." />
+          </div>
+        </div>
+
+        <!-- STEP 3: Your Expertise -->
+        <div class="wiz__step" id="wiz-step-3">
+          <div class="form__group">
+            <label class="form__label">Primary Domain of Expertise <span>*</span></label>
+            <div class="form__input domain-trigger" id="domain-trigger" tabindex="0" role="button" aria-haspopup="true">
+              <span id="domain-trigger-text" style="color:var(--text-muted);">Select your primary domain</span>
+              <span class="domain-trigger__arrow">▾</span>
+            </div>
+            <input type="hidden" id="domain-value" />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Highest Education Level <span>*</span></label>
+            <select class="form__select" id="w-education">
+              <option value="" disabled selected>Select level</option>
+              <option value="bachelors">Bachelor's Degree</option>
+              <option value="masters">Master's Degree</option>
+              <option value="phd">PhD / Doctorate</option>
+              <option value="md">MD / Medical Degree</option>
+              <option value="jd">JD / Law Degree</option>
+              <option value="mba">MBA</option>
+              <option value="postdoc">Postdoctoral Researcher</option>
+              <option value="professional">Professional Certification / Licensure</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label">Field of Study / Specialization <span>*</span></label>
+            <input type="text" class="form__input" id="w-field" placeholder="e.g. Computational Neuroscience" />
+          </div>
+        </div>
+
+        <!-- STEP 4: Professional Background -->
+        <div class="wiz__step" id="wiz-step-4">
+          <div class="form__group">
+            <label class="form__label">Current Job Title / Role <span>*</span></label>
+            <input type="text" class="form__input" id="w-jobtitle" placeholder="e.g. Senior Research Scientist" />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Current Employer / Institution</label>
+            <input type="text" class="form__input" id="w-employer" placeholder="e.g. Stanford University" />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Years of Professional Experience <span>*</span></label>
+            <select class="form__select" id="w-years">
+              <option value="" disabled selected>Select range</option>
+              <option value="1-2">1 – 2 years</option>
+              <option value="3-5">3 – 5 years</option>
+              <option value="6-10">6 – 10 years</option>
+              <option value="11-20">11 – 20 years</option>
+              <option value="20+">20+ years</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- STEP 5: Availability -->
+        <div class="wiz__step" id="wiz-step-5">
+          <div class="form__group">
+            <label class="form__label">Available Hours per Week <span>*</span></label>
+            <select class="form__select" id="w-availability">
+              <option value="" disabled selected>Select range</option>
+              <option value="5-10">5 – 10 hours</option>
+              <option value="10-20">10 – 20 hours</option>
+              <option value="20-30">20 – 30 hours</option>
+              <option value="30-40">30 – 40 hours</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label">Languages Spoken (check all that apply)</label>
+            <div class="form__checkbox-group">
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="english" /> English</label>
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="mandarin" /> Mandarin Chinese</label>
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="spanish" /> Spanish</label>
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="arabic" /> Arabic</label>
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="french" /> French</label>
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="german" /> German</label>
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="japanese" /> Japanese</label>
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="korean" /> Korean</label>
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="russian" /> Russian</label>
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="portuguese" /> Portuguese</label>
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="hindi" /> Hindi</label>
+              <label class="form__checkbox"><input type="checkbox" name="languages" value="other-lang" /> Other</label>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label">Preferred Working Hours (check all that apply)</label>
+            <div class="form__checkbox-group">
+              <label class="form__checkbox"><input type="checkbox" name="schedule" value="morning" /> Morning (6am–12pm local)</label>
+              <label class="form__checkbox"><input type="checkbox" name="schedule" value="afternoon" /> Afternoon (12pm–6pm local)</label>
+              <label class="form__checkbox"><input type="checkbox" name="schedule" value="evening" /> Evening (6pm–12am local)</label>
+              <label class="form__checkbox"><input type="checkbox" name="schedule" value="weekends" /> Weekends</label>
+              <label class="form__checkbox"><input type="checkbox" name="schedule" value="flexible" /> Fully Flexible</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 6: Resume & Credentials -->
+        <div class="wiz__step" id="wiz-step-6">
+          <div class="form__group">
+            <label class="form__label">Resume / CV <span>*</span></label>
+            <div id="resume-dropzone" style="border:2px dashed var(--border-color);border-radius:var(--radius-sm);padding:2rem 1.5rem;text-align:center;cursor:pointer;transition:border-color 0.25s,background 0.25s;position:relative;background:var(--bg-card);">
+              <input type="file" id="resume-file-input" accept=".pdf,.doc,.docx" style="position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;" />
+              <div id="resume-dropzone-content">
+                <div style="font-size:2rem;margin-bottom:0.5rem;line-height:1;">📎</div>
+                <div style="font-weight:600;color:var(--text-primary);font-size:0.95rem;">Click to upload or drag &amp; drop</div>
+                <div style="font-size:0.78rem;color:var(--text-muted);margin-top:0.3rem;">PDF, DOC, DOCX &mdash; max 5 MB</div>
+              </div>
+            </div>
+            <input type="hidden" id="resume-file-b64" />
+            <input type="hidden" id="resume-file-name" />
+            <p id="resume-error" style="display:none;font-size:0.78rem;color:#ef4444;margin-top:0.4rem;">Please attach your resume before submitting.</p>
+          </div>
+          <div class="form__group">
+            <label class="form__label">Notable Publications, Projects, or Credentials</label>
+            <input type="text" class="form__input" id="w-publications" placeholder="e.g. 3 peer-reviewed papers in Nature, USPTO patent #..., licensed in CA since 2015" />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Desired Hourly Rate</label>
+            <select class="form__select" id="w-rate">
+              <option value="" disabled selected>Select a range</option>
+              <option value="75-100">$75 – $100 / hr</option>
+              <option value="100-150">$100 – $150 / hr</option>
+              <option value="150-200">$150 – $200 / hr</option>
+              <option value="negotiate">Open to negotiation</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- STEP 7: About You -->
+        <div class="wiz__step" id="wiz-step-7">
+          <div class="form__group">
+            <label class="form__label">Brief Professional Bio <span>*</span></label>
+            <textarea class="form__textarea" id="w-bio" placeholder="Tell us about your background, key areas of expertise, any relevant accomplishments, and why you're interested in contributing to AI development. (200–500 words)"></textarea>
+          </div>
+          <div class="form__group">
+            <label class="form__label">How did you hear about Alephic Labs AI Lab?</label>
+            <select class="form__select" id="w-referral">
+              <option value="" disabled selected>Select an option</option>
+              <option value="google">Google Search</option>
+              <option value="linkedin">LinkedIn</option>
+              <option value="referral">Referred by someone</option>
+              <option value="social">Social Media</option>
+              <option value="community">Online Community / Forum</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <p style="font-size:0.78rem;color:var(--text-dim);margin-top:0.5rem;">By submitting, you agree to be contacted by our team. All information is kept strictly confidential.</p>
+        </div>
+
+      </div><!-- end wiz__body -->
+
+      <!-- Footer navigation -->
+      <div class="wiz__footer" id="wiz-footer">
+        <button class="btn btn--secondary" id="wiz-back" style="display:none;">&#8592; Back</button>
+        <div style="flex:1;"></div>
+        <button class="btn btn--primary" id="wiz-next">Next &#8594;</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Domain Browse Modal ── -->
+  <div class="domain-modal-overlay" id="domain-browse-overlay" role="dialog" aria-modal="true">
+    <div class="domain-modal" style="max-width:460px;">
+      <div class="domain-modal__header">
+        <h3 id="browse-modal-title" style="display:flex;align-items:center;gap:0.5rem;"></h3>
+        <button class="domain-modal__close" id="browse-modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div style="padding:1.25rem 1.5rem;overflow-y:auto;">
+        <div id="browse-modal-list" style="display:flex;flex-direction:column;gap:4px;"></div>
+        <a href="#apply" id="browse-modal-cta" style="display:inline-block;margin-top:1.25rem;padding:0.6rem 1.2rem;background:linear-gradient(135deg,#10b981,#059669);color:#fff;border-radius:8px;font-size:0.85rem;font-weight:600;text-decoration:none;">Apply in this domain →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Domain Picker Modal ── -->
+  <div class="domain-modal-overlay" id="domain-modal-overlay" role="dialog" aria-modal="true" aria-label="Select domain">
+    <div class="domain-modal">
+      <div class="domain-modal__header">
+        <h3>Select Primary Domain of Expertise</h3>
+        <button class="domain-modal__close" id="domain-modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="domain-modal__body">
+        <div class="domain-modal__cats" id="domain-modal-cats"></div>
+        <div class="domain-modal__fields" id="domain-modal-fields">
+          <p class="domain-modal__placeholder">← Select a category to see specializations</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  // ── AI Flow Diagram Animation ─────────────────────────────────────────
+  (function () {
+    const nodes      = document.querySelectorAll('.aiflow__node');
+    const connectors = document.querySelectorAll('.aiflow__connector');
+    const pdots      = document.querySelectorAll('.aiflow__pdot');
+    const outer      = document.getElementById('aiflow-outer');
+    if (!nodes.length) return;
+    let step = 0;
+
+    function restartAnim(el, animName, duration) {
+      el.style.animation = 'none';
+      void el.offsetWidth;
+      el.style.animation = animName + ' ' + duration + ' ease-in forwards';
+    }
+
+    function tick() {
+      // ── Reset all nodes
+      nodes.forEach(function (n) {
+        n.classList.remove('active');
+        n.style.borderColor = 'rgba(255,255,255,0.06)';
+        n.style.boxShadow   = 'none';
+        n.style.background  = 'rgba(255,255,255,0.025)';
+        n.querySelector('.aiflow__icon').style.background  = 'rgba(255,255,255,0.04)';
+        n.querySelector('.aiflow__icon').style.borderColor = 'rgba(255,255,255,0.08)';
+        n.querySelector('.aiflow__icon').style.boxShadow   = 'none';
+        n.querySelector('.aiflow__icon-ring').style.borderColor = 'transparent';
+        n.querySelector('.aiflow__badge').style.color       = 'rgba(255,255,255,0.22)';
+        n.querySelector('.aiflow__badge').style.borderColor = 'rgba(255,255,255,0.07)';
+        n.querySelector('.aiflow__badge').style.background  = 'rgba(255,255,255,0.04)';
+        n.querySelector('.aiflow__badge').style.boxShadow   = 'none';
+      });
+
+      // ── Reset progress dots
+      pdots.forEach(function (d) {
+        d.classList.remove('active');
+        d.style.background = 'rgba(255,255,255,0.1)';
+        d.style.boxShadow  = 'none';
+        d.style.color      = 'transparent';
+      });
+
+      // ── Activate current node
+      const node  = nodes[step];
+      const color = node.dataset.color;
+      node.classList.add('active');
+      node.style.borderColor = color;
+      node.style.boxShadow   = '0 0 32px ' + color + '30, 0 0 0 1px ' + color + '25, inset 0 0 20px ' + color + '08';
+      node.style.background  = color + '10';
+
+      const icon = node.querySelector('.aiflow__icon');
+      icon.style.background  = color + '22';
+      icon.style.borderColor = color + '60';
+      icon.style.boxShadow   = '0 0 16px ' + color + '40';
+
+      const ring = node.querySelector('.aiflow__icon-ring');
+      ring.style.borderColor = color;
+
+      const badge = node.querySelector('.aiflow__badge');
+      badge.style.color       = color;
+      badge.style.borderColor = color + '55';
+      badge.style.background  = color + '18';
+      badge.style.boxShadow   = '0 0 10px ' + color + '30';
+
+      // ── Update progress dots
+      if (pdots[step]) {
+        pdots[step].classList.add('active');
+        pdots[step].style.background = color;
+        pdots[step].style.boxShadow  = '0 0 10px ' + color;
+        pdots[step].style.color      = color;
+      }
+
+      // ── Shift card border glow
+      if (outer) outer.style.boxShadow = '0 0 48px ' + color + '22';
+
+      // ── Animate connector dots to next node
+      if (step < connectors.length) {
+        const line = connectors[step].querySelector('.aiflow__line');
+        line.style.background = 'linear-gradient(to bottom, ' + color + '60, rgba(255,255,255,0.07))';
+        setTimeout(function() { line.style.background = 'rgba(255,255,255,0.07)'; }, 900);
+
+        const dot  = connectors[step].querySelector('.aiflow__dot');
+        const dot2 = connectors[step].querySelector('.aiflow__dot2');
+        dot.style.background  = color;
+        dot.style.boxShadow   = '0 0 8px ' + color;
+        dot2.style.background = color + '80';
+        restartAnim(dot,  'dotSlide',  '0.9s');
+        setTimeout(function() { restartAnim(dot2, 'dotSlide2', '0.9s'); }, 120);
+      }
+
+      step = (step + 1) % nodes.length;
+      setTimeout(tick, 1900);
+    }
+
+    setTimeout(tick, 700);
+  })();
+
+  // ── Domain Browse Cards ───────────────────────────────────────────────
+  (function () {
+    const browseOverlay = document.getElementById('domain-browse-overlay');
+    const browseTitle   = document.getElementById('browse-modal-title');
+    const browseList    = document.getElementById('browse-modal-list');
+    const browseClose   = document.getElementById('browse-modal-close');
+
+    // Inline DOMAINS data for browse (mirrors picker data)
+    const BD = [
+      { emoji:'🤖', label:'AI & Computer Science',        fields:['Machine Learning & Deep Learning','Natural Language Processing (NLP)','Computer Vision & Image Recognition','AI Safety & Alignment Research','Reinforcement Learning','Software Engineering & Systems Design','Computer Science Theory & Algorithms','Cybersecurity & Information Security','Data Science & Analytics','Database & Data Engineering'] },
+      { emoji:'📐', label:'Mathematics & Statistics',     fields:['Pure Mathematics','Applied Mathematics & Numerical Analysis','Statistics & Probability Theory','Combinatorics & Discrete Mathematics','Quantitative Methods & Operations Research','Actuarial Science'] },
+      { emoji:'⚗️', label:'Physical Sciences',            fields:['Theoretical Physics','Experimental & Applied Physics','Quantum Computing & Quantum Physics','Organic Chemistry','Inorganic & Physical Chemistry','Computational Chemistry','Materials Science & Engineering','Astronomy & Astrophysics','Earth Sciences & Geology'] },
+      { emoji:'🧬', label:'Life Sciences & Medicine',     fields:['Molecular & Cell Biology','Genetics & Genomics','Neuroscience & Cognitive Science','Medicine & Clinical Practice','Surgery & Surgical Specialties','Psychiatry & Mental Health','Pharmacology & Drug Development','Biomedical Engineering','Public Health & Epidemiology','Radiology & Medical Imaging','Nutrition & Dietetics','Veterinary Medicine'] },
+      { emoji:'⚙️', label:'Engineering',                  fields:['Electrical Engineering','Mechanical Engineering','Civil & Structural Engineering','Chemical Engineering','Aerospace Engineering','Environmental Engineering','Robotics & Automation','Industrial & Manufacturing Engineering'] },
+      { emoji:'⚖️', label:'Law & Regulatory',             fields:['Corporate & Commercial Law','Intellectual Property & Patent Law','Criminal Law','Constitutional & Administrative Law','International & Trade Law','Tax Law','Healthcare & Bioethics Law','Technology & Data Privacy Law','Environmental Law','Immigration Law'] },
+      { emoji:'💰', label:'Finance & Economics',          fields:['Financial Analysis & Investment','Macroeconomics & Monetary Policy','Microeconomics & Behavioral Economics','Quantitative Finance & Derivatives','Risk Management & Compliance','Accounting & Auditing','Blockchain & Cryptocurrency','Real Estate Finance'] },
+      { emoji:'🏛️', label:'Humanities & Social Sciences', fields:['Philosophy & Ethics','History & Historical Analysis','Linguistics & Computational Linguistics','Translation & Interpretation','Anthropology & Cultural Studies','Sociology & Social Theory','Political Science & International Relations','Religious Studies & Theology','Literature & Literary Criticism','Psychology & Behavioral Science'] },
+      { emoji:'🎓', label:'Education',                    fields:['STEM Education & Pedagogy','Humanities & Social Sciences Education','Educational Psychology & Learning Science','Curriculum Development','Special Education'] },
+      { emoji:'🎨', label:'Creative, Design & Media',     fields:['Creative Writing & Fiction','Journalism & Investigative Reporting','UI/UX Design & HCI','Music Theory & Composition','Architecture & Urban Planning','Film, Media & Communications'] },
+    ];
+
+    function openBrowse(index) {
+      const cat = BD[index];
+      browseTitle.textContent = cat.emoji + '  ' + cat.label;
+      browseList.innerHTML = '';
+      cat.fields.forEach(function (f) {
+        const el = document.createElement('div');
+        el.style.cssText = 'padding:0.5rem 0.75rem;font-size:0.85rem;color:var(--text-muted);border-radius:6px;background:rgba(255,255,255,0.03);border:1px solid var(--border-color);';
+        el.textContent = f;
+        browseList.appendChild(el);
+      });
+      browseOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeBrowse() {
+      browseOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.domain-browse-card').forEach(function (card) {
+      card.addEventListener('mouseenter', function () { this.style.boxShadow = '0 4px 20px rgba(0,0,0,0.3)'; this.style.borderColor = 'rgba(255,255,255,0.15)'; });
+      card.addEventListener('mouseleave', function () { this.style.boxShadow = ''; this.style.borderColor = ''; });
+      card.addEventListener('click', function () { openBrowse(parseInt(this.dataset.cat)); });
+    });
+
+    browseClose.addEventListener('click', closeBrowse);
+    browseOverlay.addEventListener('click', function (e) { if (e.target === browseOverlay) closeBrowse(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeBrowse(); });
+    document.getElementById('browse-modal-cta').addEventListener('click', closeBrowse);
+  })();
+
+  // ── Domain Picker ─────────────────────────────────────────────────────
+  (function () {
+    const DOMAINS = [
+      { emoji: '🤖', label: 'AI & Computer Science', fields: [
+        { value: 'ml-dl',                label: 'Machine Learning & Deep Learning' },
+        { value: 'nlp',                  label: 'Natural Language Processing (NLP)' },
+        { value: 'computer-vision',      label: 'Computer Vision & Image Recognition' },
+        { value: 'ai-safety',            label: 'AI Safety & Alignment Research' },
+        { value: 'reinforcement-learning', label: 'Reinforcement Learning' },
+        { value: 'software-engineering', label: 'Software Engineering & Systems Design' },
+        { value: 'cs-theory',            label: 'Computer Science Theory & Algorithms' },
+        { value: 'cybersecurity',        label: 'Cybersecurity & Information Security' },
+        { value: 'data-science',         label: 'Data Science & Analytics' },
+        { value: 'data-engineering',     label: 'Database & Data Engineering' },
+      ]},
+      { emoji: '📐', label: 'Mathematics & Statistics', fields: [
+        { value: 'pure-math',            label: 'Pure Mathematics' },
+        { value: 'applied-math',         label: 'Applied Mathematics & Numerical Analysis' },
+        { value: 'statistics',           label: 'Statistics & Probability Theory' },
+        { value: 'discrete-math',        label: 'Combinatorics & Discrete Mathematics' },
+        { value: 'quantitative-methods', label: 'Quantitative Methods & Operations Research' },
+        { value: 'actuarial',            label: 'Actuarial Science' },
+      ]},
+      { emoji: '⚗️', label: 'Physical Sciences', fields: [
+        { value: 'theoretical-physics',  label: 'Theoretical Physics' },
+        { value: 'experimental-physics', label: 'Experimental & Applied Physics' },
+        { value: 'quantum',              label: 'Quantum Computing & Quantum Physics' },
+        { value: 'organic-chem',         label: 'Organic Chemistry' },
+        { value: 'inorganic-chem',       label: 'Inorganic & Physical Chemistry' },
+        { value: 'computational-chem',   label: 'Computational Chemistry' },
+        { value: 'materials-science',    label: 'Materials Science & Engineering' },
+        { value: 'astronomy',            label: 'Astronomy & Astrophysics' },
+        { value: 'earth-science',        label: 'Earth Sciences & Geology' },
+      ]},
+      { emoji: '🧬', label: 'Life Sciences & Medicine', fields: [
+        { value: 'cell-biology',         label: 'Molecular & Cell Biology' },
+        { value: 'genetics',             label: 'Genetics & Genomics' },
+        { value: 'neuroscience',         label: 'Neuroscience & Cognitive Science' },
+        { value: 'medicine',             label: 'Medicine & Clinical Practice' },
+        { value: 'surgery',              label: 'Surgery & Surgical Specialties' },
+        { value: 'psychiatry',           label: 'Psychiatry & Mental Health' },
+        { value: 'pharmacology',         label: 'Pharmacology & Drug Development' },
+        { value: 'biomedical-eng',       label: 'Biomedical Engineering' },
+        { value: 'public-health',        label: 'Public Health & Epidemiology' },
+        { value: 'radiology',            label: 'Radiology & Medical Imaging' },
+        { value: 'nutrition',            label: 'Nutrition & Dietetics' },
+        { value: 'veterinary',           label: 'Veterinary Medicine' },
+      ]},
+      { emoji: '⚙️', label: 'Engineering', fields: [
+        { value: 'electrical-eng',       label: 'Electrical Engineering' },
+        { value: 'mechanical-eng',       label: 'Mechanical Engineering' },
+        { value: 'civil-eng',            label: 'Civil & Structural Engineering' },
+        { value: 'chemical-eng',         label: 'Chemical Engineering' },
+        { value: 'aerospace-eng',        label: 'Aerospace Engineering' },
+        { value: 'environmental-eng',    label: 'Environmental Engineering' },
+        { value: 'robotics',             label: 'Robotics & Automation' },
+        { value: 'industrial-eng',       label: 'Industrial & Manufacturing Engineering' },
+      ]},
+      { emoji: '⚖️', label: 'Law & Regulatory', fields: [
+        { value: 'corporate-law',        label: 'Corporate & Commercial Law' },
+        { value: 'ip-law',               label: 'Intellectual Property & Patent Law' },
+        { value: 'criminal-law',         label: 'Criminal Law' },
+        { value: 'constitutional-law',   label: 'Constitutional & Administrative Law' },
+        { value: 'international-law',    label: 'International & Trade Law' },
+        { value: 'tax-law',              label: 'Tax Law' },
+        { value: 'healthcare-law',       label: 'Healthcare & Bioethics Law' },
+        { value: 'tech-law',             label: 'Technology & Data Privacy Law' },
+        { value: 'environmental-law',    label: 'Environmental Law' },
+        { value: 'immigration-law',      label: 'Immigration Law' },
+      ]},
+      { emoji: '💰', label: 'Finance & Economics', fields: [
+        { value: 'finance',              label: 'Financial Analysis & Investment' },
+        { value: 'macroeconomics',       label: 'Macroeconomics & Monetary Policy' },
+        { value: 'microeconomics',       label: 'Microeconomics & Behavioral Economics' },
+        { value: 'quant-finance',        label: 'Quantitative Finance & Derivatives' },
+        { value: 'risk-management',      label: 'Risk Management & Compliance' },
+        { value: 'accounting',           label: 'Accounting & Auditing' },
+        { value: 'crypto',               label: 'Blockchain & Cryptocurrency' },
+        { value: 'real-estate-finance',  label: 'Real Estate Finance' },
+      ]},
+      { emoji: '🎓', label: 'Humanities & Social Sciences', fields: [
+        { value: 'philosophy',           label: 'Philosophy & Ethics' },
+        { value: 'history',              label: 'History & Historical Analysis' },
+        { value: 'linguistics',          label: 'Linguistics & Computational Linguistics' },
+        { value: 'translation',          label: 'Translation & Interpretation' },
+        { value: 'anthropology',         label: 'Anthropology & Cultural Studies' },
+        { value: 'sociology',            label: 'Sociology & Social Theory' },
+        { value: 'political-science',    label: 'Political Science & International Relations' },
+        { value: 'religious-studies',    label: 'Religious Studies & Theology' },
+        { value: 'literature',           label: 'Literature & Literary Criticism' },
+        { value: 'psychology',           label: 'Psychology & Behavioral Science' },
+      ]},
+      { emoji: '📚', label: 'Education', fields: [
+        { value: 'stem-education',       label: 'STEM Education & Pedagogy' },
+        { value: 'humanities-education', label: 'Humanities & Social Sciences Education' },
+        { value: 'educational-psychology', label: 'Educational Psychology & Learning Science' },
+        { value: 'curriculum',           label: 'Curriculum Development' },
+        { value: 'special-education',    label: 'Special Education' },
+      ]},
+      { emoji: '🎨', label: 'Creative, Design & Media', fields: [
+        { value: 'creative-writing',     label: 'Creative Writing & Fiction' },
+        { value: 'journalism',           label: 'Journalism & Investigative Reporting' },
+        { value: 'ux-design',            label: 'UI/UX Design & HCI' },
+        { value: 'music',                label: 'Music Theory & Composition' },
+        { value: 'architecture',         label: 'Architecture & Urban Planning' },
+        { value: 'film-media',           label: 'Film, Media & Communications' },
+      ]},
+      { emoji: '✦',  label: 'Other', fields: [
+        { value: 'other', label: 'Other (describe in bio)' },
+      ]},
+    ];
+
+    const trigger    = document.getElementById('domain-trigger');
+    const triggerTxt = document.getElementById('domain-trigger-text');
+    const hiddenVal  = document.getElementById('domain-value');
+    const overlay    = document.getElementById('domain-modal-overlay');
+    const catsPane   = document.getElementById('domain-modal-cats');
+    const fieldsPane = document.getElementById('domain-modal-fields');
+    const closeBtn   = document.getElementById('domain-modal-close');
+
+    let activeCatIndex = -1;
+    let selectedValue  = '';
+
+    // Build category list
+    DOMAINS.forEach(function (cat, i) {
+      const el = document.createElement('div');
+      el.className = 'domain-modal__cat-item';
+      el.textContent = cat.emoji + '  ' + cat.label;
+      el.addEventListener('click', function () { showFields(i); });
+      catsPane.appendChild(el);
+    });
+
+    function showFields(index) {
+      activeCatIndex = index;
+      // Update active state on categories
+      catsPane.querySelectorAll('.domain-modal__cat-item').forEach(function (el, i) {
+        el.classList.toggle('active', i === index);
+      });
+      const cat = DOMAINS[index];
+      fieldsPane.innerHTML = '<div class="domain-modal__fields-title">' + cat.label + '</div>';
+      cat.fields.forEach(function (f) {
+        const el = document.createElement('div');
+        el.className = 'domain-modal__field-item' + (f.value === selectedValue ? ' selected' : '');
+        el.textContent = f.label;
+        el.addEventListener('click', function () { selectField(f.value, f.label); });
+        fieldsPane.appendChild(el);
+      });
+    }
+
+    function selectField(value, label) {
+      selectedValue = value;
+      hiddenVal.value = value;
+      triggerTxt.textContent = label;
+      triggerTxt.style.color = 'var(--text-primary)';
+      closeModal();
+    }
+
+    function openModal() {
+      overlay.classList.add('active');
+      trigger.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      // Auto-select first category or the one matching current selection
+      const startIndex = activeCatIndex >= 0 ? activeCatIndex : 0;
+      showFields(startIndex);
+    }
+
+    function closeModal() {
+      overlay.classList.remove('active');
+      trigger.classList.remove('open');
+      // Keep scroll locked if the wizard is still open
+      if (!document.getElementById('app-wizard-overlay').classList.contains('active')) {
+        document.body.style.overflow = '';
+      }
+    }
+
+    trigger.addEventListener('click', openModal);
+    trigger.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(); }
+    });
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeModal();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeModal();
+    });
+
+  })();
+
+  // ── Resume Upload Handler ──────────────────────────────────────────────
+  (function () {
+    const dropzone  = document.getElementById('resume-dropzone');
+    const fileInput = document.getElementById('resume-file-input');
+    const b64Input  = document.getElementById('resume-file-b64');
+    const nameInput = document.getElementById('resume-file-name');
+    const content   = document.getElementById('resume-dropzone-content');
+    const errMsg    = document.getElementById('resume-error');
+
+    function handleFile(file) {
+      if (!file) return;
+      if (file.size > 5 * 1024 * 1024) {
+        errMsg.textContent = 'File too large — please upload a file under 5 MB.';
+        errMsg.style.display = 'block';
+        return;
+      }
+      errMsg.style.display = 'none';
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        b64Input.value  = e.target.result; // data:<mime>;base64,<data>
+        nameInput.value = file.name;
+        dropzone.style.borderColor = '#10b981';
+        content.innerHTML = `
+          <div style="font-size:1.6rem;line-height:1;margin-bottom:0.4rem;">✅</div>
+          <div style="font-weight:700;color:#10b981;font-size:0.9rem;">${file.name}</div>
+          <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.25rem;">${(file.size/1024).toFixed(0)} KB &mdash; click to change</div>`;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    fileInput.addEventListener('change', function () { handleFile(this.files[0]); });
+
+    dropzone.addEventListener('dragover', function (e) {
+      e.preventDefault();
+      this.style.borderColor = 'var(--accent-cyan)';
+      this.style.background  = 'rgba(0,212,255,0.05)';
+    });
+    dropzone.addEventListener('dragleave', function () {
+      this.style.borderColor = b64Input.value ? '#10b981' : 'var(--border-color)';
+      this.style.background  = 'var(--bg-card)';
+    });
+    dropzone.addEventListener('drop', function (e) {
+      e.preventDefault();
+      this.style.background = 'var(--bg-card)';
+      handleFile(e.dataTransfer.files[0]);
+    });
+
+  })();
+  // ── Application Wizard ────────────────────────────────────────────────
+  (function () {
+    var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxblpSFEwjNFA0Fn1Nuc6Bi7S9eZd2bB_tZea3D03u-mJzQbZn_xuRQsSwFfRYM-4mL/exec';
+    var TOTAL = 7;
+    var STEPS = [
+      { title: 'Basic Information',        sub: "Let's start with the basics." },
+      { title: 'Online Presence',           sub: 'Share your professional links (optional).' },
+      { title: 'Your Expertise',            sub: 'Tell us about your domain and education.' },
+      { title: 'Professional Background',   sub: 'Your current role and experience level.' },
+      { title: 'Availability',              sub: 'How many hours can you commit each week?' },
+      { title: 'Resume & Credentials',      sub: 'Upload your CV and any notable work.' },
+      { title: 'About You',                 sub: 'A brief bio and how you found us.' },
+    ];
+
+    var current = 1;
+
+    var wizOverlay = document.getElementById('app-wizard-overlay');
+    var wizBack    = document.getElementById('wiz-back');
+    var wizNext    = document.getElementById('wiz-next');
+    var wizClose   = document.getElementById('wiz-close');
+    var wizFooter  = document.getElementById('wiz-footer');
+    var progressFill = document.getElementById('wiz-progress-fill');
+
+    function openWizard() {
+      wizOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      goTo(1);
+    }
+
+    function closeWizard() {
+      wizOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function goTo(n) {
+      document.querySelectorAll('.wiz__step').forEach(function (el) {
+        el.classList.remove('active');
+      });
+      var step = document.getElementById('wiz-step-' + n);
+      if (step) step.classList.add('active');
+
+      current = n;
+
+      // Progress bar: 0% on step 1, 100% on step TOTAL
+      var pct = ((n - 1) / (TOTAL - 1)) * 100;
+      progressFill.style.width = pct + '%';
+
+      // Labels
+      document.getElementById('wiz-step-counter').textContent = 'Step ' + n + ' of ' + TOTAL;
+      document.getElementById('wiz-step-title').textContent   = STEPS[n - 1].title;
+      document.getElementById('wiz-step-sub').textContent     = STEPS[n - 1].sub;
+
+      // Back button
+      wizBack.style.display = n === 1 ? 'none' : '';
+
+      // Next button label
+      wizNext.textContent = n === TOTAL ? 'Submit Application \u2192' : 'Next \u2192';
+      wizNext.dataset.isSubmit = n === TOTAL ? '1' : '';
+      wizNext.disabled = false;
+
+      // Scroll body to top
+      var body = document.getElementById('wiz-body');
+      if (body) body.scrollTop = 0;
+    }
+
+    function markError(el) {
+      el.style.borderColor = '#ef4444';
+    }
+
+    function clearErrors() {
+      document.querySelectorAll('#app-wizard .form__input, #app-wizard .form__select, #app-wizard .form__textarea').forEach(function (el) {
+        el.style.borderColor = '';
+      });
+      var dt = document.getElementById('domain-trigger');
+      if (dt) dt.style.borderColor = '';
+      var dz = document.getElementById('resume-dropzone');
+      if (dz) dz.style.borderColor = 'var(--border-color)';
+      var re = document.getElementById('resume-error');
+      if (re) re.style.display = 'none';
+    }
+
+    function validateStep(n) {
+      clearErrors();
+      var ok = true;
+      var firstBad = null;
+
+      function bad(el) {
+        markError(el);
+        if (!firstBad) firstBad = el;
+        ok = false;
+      }
+
+      if (n === 1) {
+        var name    = document.getElementById('w-name');
+        var email   = document.getElementById('w-email');
+        var phone   = document.getElementById('w-phone');
+        var country = document.getElementById('w-country');
+        if (!name.value.trim())    bad(name);
+        if (!email.value.trim())   bad(email);
+        if (!phone.value.trim())   bad(phone);
+        if (!country.value.trim()) bad(country);
+      } else if (n === 3) {
+        var domainVal = document.getElementById('domain-value');
+        var education = document.getElementById('w-education');
+        var field     = document.getElementById('w-field');
+        if (!domainVal.value) {
+          var dt = document.getElementById('domain-trigger');
+          dt.style.borderColor = '#ef4444';
+          if (!firstBad) firstBad = dt;
+          ok = false;
+        }
+        if (!education.value)    bad(education);
+        if (!field.value.trim()) bad(field);
+      } else if (n === 4) {
+        var jobTitle = document.getElementById('w-jobtitle');
+        var years    = document.getElementById('w-years');
+        if (!jobTitle.value.trim()) bad(jobTitle);
+        if (!years.value)           bad(years);
+      } else if (n === 5) {
+        var avail = document.getElementById('w-availability');
+        if (!avail.value) bad(avail);
+      } else if (n === 6) {
+        var b64 = document.getElementById('resume-file-b64');
+        if (!b64.value) {
+          var dz = document.getElementById('resume-dropzone');
+          var re = document.getElementById('resume-error');
+          dz.style.borderColor = '#ef4444';
+          re.style.display = 'block';
+          if (!firstBad) firstBad = dz;
+          ok = false;
+        }
+      } else if (n === 7) {
+        var bio = document.getElementById('w-bio');
+        if (!bio.value.trim()) bad(bio);
+      }
+
+      if (firstBad && firstBad.focus) firstBad.focus();
+      return ok;
+    }
+
+    function collectData() {
+      var d = { _formType: 'ailab-application' };
+      d.name           = (document.getElementById('w-name').value || '').trim();
+      d.email          = (document.getElementById('w-email').value || '').trim();
+      d.phone          = (document.getElementById('w-phone').value || '').trim();
+      d.country        = (document.getElementById('w-country').value || '').trim();
+      d.linkedin       = (document.getElementById('w-linkedin').value || '').trim();
+      d.portfolio      = (document.getElementById('w-portfolio').value || '').trim();
+      d.primary_domain = document.getElementById('domain-value').value || '';
+      d.education      = document.getElementById('w-education').value || '';
+      d.field_of_study = (document.getElementById('w-field').value || '').trim();
+      d.job_title      = (document.getElementById('w-jobtitle').value || '').trim();
+      d.employer       = (document.getElementById('w-employer').value || '').trim();
+      d.years_experience = document.getElementById('w-years').value || '';
+      d.availability   = document.getElementById('w-availability').value || '';
+      d.languages      = Array.from(document.querySelectorAll('#wiz-step-5 input[name="languages"]:checked')).map(function (c) { return c.value; });
+      d.schedule       = Array.from(document.querySelectorAll('#wiz-step-5 input[name="schedule"]:checked')).map(function (c) { return c.value; });
+      d.resume_file    = document.getElementById('resume-file-b64').value || '';
+      d.resume_filename = document.getElementById('resume-file-name').value || '';
+      d.publications   = (document.getElementById('w-publications').value || '').trim();
+      d.desired_rate   = document.getElementById('w-rate').value || '';
+      d.bio            = (document.getElementById('w-bio').value || '').trim();
+      d.referral       = document.getElementById('w-referral').value || '';
+      return d;
+    }
+
+    function showSuccess() {
+      document.getElementById('wiz-body').innerHTML =
+        '<div class="wiz__success">' +
+          '<div class="wiz__success-icon">\u2705</div>' +
+          '<h3 class="wiz__success-title">Application Submitted!</h3>' +
+          '<p class="wiz__success-msg">Thank you! We\'ve received your application and will be in touch within 5 business days. The full matching process takes no more than 3 weeks.</p>' +
+        '</div>';
+      wizFooter.style.display = 'none';
+      document.querySelector('.wiz__progress-track').style.display = 'none';
+      document.querySelector('.wiz__meta').style.display = 'none';
+    }
+
+    function showSubmitError() {
+      var body = document.getElementById('wiz-body');
+      var err = document.createElement('div');
+      err.className = 'banner';
+      err.style.cssText = 'border-color:rgba(255,80,80,0.2);background:rgba(255,80,80,0.06);margin-bottom:1rem;';
+      err.innerHTML = '<span class="banner__icon" style="color:#ff5050;">\u2717</span> <span>Something went wrong. Please try again or email <a href="mailto:ailab@alephiclabs.com">ailab@alephiclabs.com</a>.</span>';
+      body.insertBefore(err, body.firstChild);
+      setTimeout(function () { if (err.parentNode) err.parentNode.removeChild(err); }, 6000);
+    }
+
+    async function submitApplication() {
+      wizNext.disabled = true;
+      wizNext.textContent = 'Submitting\u2026';
+      try {
+        await fetch(APPS_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(collectData()),
+        });
+        showSuccess();
+      } catch (err) {
+        wizNext.disabled = false;
+        wizNext.textContent = 'Submit Application \u2192';
+        showSubmitError();
+      }
+    }
+
+    // Wire up events
+    document.getElementById('start-application-btn').addEventListener('click', openWizard);
+    wizClose.addEventListener('click', closeWizard);
+    wizOverlay.addEventListener('click', function (e) {
+      if (e.target === wizOverlay) closeWizard();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && wizOverlay.classList.contains('active')) closeWizard();
+    });
+    wizBack.addEventListener('click', function () {
+      if (current > 1) goTo(current - 1);
+    });
+    wizNext.addEventListener('click', function () {
+      if (!validateStep(current)) return;
+      if (wizNext.dataset.isSubmit) {
+        submitApplication();
+      } else {
+        goTo(current + 1);
+      }
+    });
+  })();
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
