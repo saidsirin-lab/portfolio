@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050510"/>
+      <stop offset="50%" stop-color="#0a0a1f"/>
+      <stop offset="100%" stop-color="#0e0e28"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.2" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="rgba(0,212,255,0.08)"/>
+      <stop offset="100%" stop-color="rgba(0,212,255,0)"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.8" cy="0.3" r="0.4">
+      <stop offset="0%" stop-color="rgba(124,58,237,0.08)"/>
+      <stop offset="100%" stop-color="rgba(124,58,237,0)"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="0.6" cy="0.7" r="0.3">
+      <stop offset="0%" stop-color="rgba(59,130,246,0.06)"/>
+      <stop offset="100%" stop-color="rgba(59,130,246,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1584" height="396" fill="url(#bg)"/>
+
+  <!-- Ambient glow orbs -->
+  <rect width="1584" height="396" fill="url(#glow1)"/>
+  <rect width="1584" height="396" fill="url(#glow2)"/>
+  <rect width="1584" height="396" fill="url(#glow3)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="#00d4ff" stroke-width="0.5">
+    <line x1="0" y1="0" x2="0" y2="396"/><line x1="60" y1="0" x2="60" y2="396"/>
+    <line x1="120" y1="0" x2="120" y2="396"/><line x1="180" y1="0" x2="180" y2="396"/>
+    <line x1="240" y1="0" x2="240" y2="396"/><line x1="300" y1="0" x2="300" y2="396"/>
+    <line x1="360" y1="0" x2="360" y2="396"/><line x1="420" y1="0" x2="420" y2="396"/>
+    <line x1="480" y1="0" x2="480" y2="396"/><line x1="540" y1="0" x2="540" y2="396"/>
+    <line x1="600" y1="0" x2="600" y2="396"/><line x1="660" y1="0" x2="660" y2="396"/>
+    <line x1="720" y1="0" x2="720" y2="396"/><line x1="780" y1="0" x2="780" y2="396"/>
+    <line x1="840" y1="0" x2="840" y2="396"/><line x1="900" y1="0" x2="900" y2="396"/>
+    <line x1="960" y1="0" x2="960" y2="396"/><line x1="1020" y1="0" x2="1020" y2="396"/>
+    <line x1="1080" y1="0" x2="1080" y2="396"/><line x1="1140" y1="0" x2="1140" y2="396"/>
+    <line x1="1200" y1="0" x2="1200" y2="396"/><line x1="1260" y1="0" x2="1260" y2="396"/>
+    <line x1="1320" y1="0" x2="1320" y2="396"/><line x1="1380" y1="0" x2="1380" y2="396"/>
+    <line x1="1440" y1="0" x2="1440" y2="396"/><line x1="1500" y1="0" x2="1500" y2="396"/>
+    <line x1="1560" y1="0" x2="1560" y2="396"/>
+    <line x1="0" y1="60" x2="1584" y2="60"/><line x1="0" y1="120" x2="1584" y2="120"/>
+    <line x1="0" y1="180" x2="1584" y2="180"/><line x1="0" y1="240" x2="1584" y2="240"/>
+    <line x1="0" y1="300" x2="1584" y2="300"/><line x1="0" y1="360" x2="1584" y2="360"/>
+  </g>
+
+  <!-- Decorative connection nodes (right side) -->
+  <g opacity="0.15">
+    <!-- Node cluster -->
+    <circle cx="1200" cy="120" r="3" fill="#00d4ff"/>
+    <circle cx="1280" cy="80" r="2.5" fill="#7c3aed"/>
+    <circle cx="1350" cy="140" r="2" fill="#00d4ff"/>
+    <circle cx="1150" cy="200" r="2.5" fill="#3b82f6"/>
+    <circle cx="1300" cy="220" r="3" fill="#7c3aed"/>
+    <circle cx="1400" cy="180" r="2" fill="#00d4ff"/>
+    <circle cx="1250" cy="300" r="2.5" fill="#3b82f6"/>
+    <circle cx="1380" cy="280" r="2" fill="#7c3aed"/>
+    <circle cx="1450" cy="100" r="2" fill="#00d4ff"/>
+    <circle cx="1100" cy="310" r="2" fill="#00d4ff"/>
+    <circle cx="1480" cy="250" r="2.5" fill="#3b82f6"/>
+    <!-- Connection lines -->
+    <line x1="1200" y1="120" x2="1280" y2="80" stroke="#00d4ff" stroke-width="0.5" opacity="0.5"/>
+    <line x1="1280" y1="80" x2="1350" y2="140" stroke="#7c3aed" stroke-width="0.5" opacity="0.4"/>
+    <line x1="1200" y1="120" x2="1150" y2="200" stroke="#3b82f6" stroke-width="0.5" opacity="0.4"/>
+    <line x1="1350" y1="140" x2="1300" y2="220" stroke="#00d4ff" stroke-width="0.5" opacity="0.3"/>
+    <line x1="1300" y1="220" x2="1380" y2="280" stroke="#7c3aed" stroke-width="0.5" opacity="0.4"/>
+    <line x1="1150" y1="200" x2="1250" y2="300" stroke="#3b82f6" stroke-width="0.5" opacity="0.3"/>
+    <line x1="1400" y1="180" x2="1350" y2="140" stroke="#00d4ff" stroke-width="0.5" opacity="0.4"/>
+    <line x1="1400" y1="180" x2="1480" y2="250" stroke="#7c3aed" stroke-width="0.5" opacity="0.3"/>
+    <line x1="1450" y1="100" x2="1400" y2="180" stroke="#00d4ff" stroke-width="0.5" opacity="0.3"/>
+    <line x1="1100" y1="310" x2="1250" y2="300" stroke="#00d4ff" stroke-width="0.5" opacity="0.3"/>
+    <line x1="1300" y1="220" x2="1250" y2="300" stroke="#3b82f6" stroke-width="0.5" opacity="0.3"/>
+    <line x1="1280" y1="80" x2="1450" y2="100" stroke="#00d4ff" stroke-width="0.5" opacity="0.3"/>
+  </g>
+
+  <!-- Aleph logomark (right area) -->
+  <g transform="translate(780, 118)">
+    <rect width="160" height="160" rx="38" fill="#10102a" stroke="url(#grad)" stroke-width="1.5" opacity="0.4"/>
+    <line x1="50" y1="118" x2="110" y2="42" stroke="url(#grad)" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 90 60 Q 68 38, 48 46" stroke="#00d4ff" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M 70 100 Q 92 122, 112 114" stroke="#7c3aed" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <circle cx="48" cy="46" r="5" fill="#00d4ff"/>
+    <circle cx="112" cy="114" r="5" fill="#7c3aed"/>
+  </g>
+
+  <!-- Company name -->
+  <text x="980" y="185" font-family="'Space Grotesk', 'Inter', -apple-system, sans-serif" font-size="52" font-weight="700" fill="url(#grad)" letter-spacing="-1">Alephic</text>
+  <text x="980" y="245" font-family="'Space Grotesk', 'Inter', -apple-system, sans-serif" font-size="52" font-weight="700" fill="url(#grad)" letter-spacing="-1">Labs</text>
+
+  <!-- Tagline -->
+  <text x="982" y="278" font-family="'Inter', -apple-system, sans-serif" font-size="15" font-weight="500" fill="#cbd5e1" letter-spacing="0.5">AI Apps &#183; Digital Agency &#183; Growlytics AI</text>
+  <text x="982" y="302" font-family="'Inter', -apple-system, sans-serif" font-size="15" font-weight="600" fill="url(#grad)" letter-spacing="0.5">AI Expert Network &#183; 100+ Domains &#183; $75&#8211;$200/hr</text>
+
+  <!-- Gradient accent line at bottom -->
+  <rect x="0" y="392" width="1584" height="4" fill="url(#grad2)"/>
+
+  <!-- Subtle top accent -->
+  <rect x="0" y="0" width="1584" height="1" fill="url(#grad2)" opacity="0.2"/>
+</svg>

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KT7RC23B1B"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KT7RC23B1B');</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Growlytics AI — AI-Powered Marketing Analytics & Growth Intelligence | Alephic Labs</title>
+  <meta name="description" content="Growlytics AI is a next-generation marketing analytics SaaS by Alephic Labs. Connect your GA4 to unlock advanced funnel analysis, LTV time series, creative performance dashboards, conditional probability mapping, and AI-driven growth recommendations." />
+  <meta name="keywords" content="Growlytics AI, marketing analytics, GA4 analytics, funnel analysis, LTV modeling, creative performance, AI marketing, growth intelligence, MCP server, conditional probability, correlation mapping, marketing SaaS, campaign optimization, bid management, AI dashboard" />
+  <meta name="author" content="Alephic Labs" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://alephiclabs.com/growlytics" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="product" />
+  <meta property="og:site_name" content="Alephic Labs" />
+  <meta property="og:title" content="Growlytics AI — Marketing Intelligence That Asks the Right Questions" />
+  <meta property="og:description" content="Connect your GA4 data and unlock advanced funnel analysis, LTV modeling, creative performance insights, and AI-driven growth recommendations built on probabilistic thinking." />
+  <meta property="og:url" content="https://alephiclabs.com/growlytics" />
+  <meta property="og:image" content="https://alephiclabs.com/logo-full.png" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Growlytics AI — AI-Powered Marketing Analytics" />
+  <meta name="twitter:description" content="Most analytics tools show what happened. Growlytics AI tells you what to do next. Connect GA4, get AI-driven growth insights." />
+  <meta name="twitter:image" content="https://alephiclabs.com/logo-full.png" />
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="logo-icon.png" />
+
+  <!-- Structured Data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Growlytics AI",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://alephiclabs.com/growlytics",
+    "description": "AI-powered marketing analytics SaaS that connects to GA4 for advanced funnel analysis, LTV time series, creative performance tracking, and AI-driven growth recommendations using conditional probability and correlation mapping.",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/PreOrder",
+      "description": "Early access — limited spots available"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Alephic Labs",
+      "url": "https://alephiclabs.com"
+    },
+    "featureList": "GA4 Integration, Advanced Funnel Analysis, LTV Time Series, Creative Performance Dashboard, Correlation Mapping, AI Growth Recommendations"
+  }
+  </script>
+  <style>
+    /* Growlytics-specific overrides */
+    .gl-gradient-bg {
+      background: radial-gradient(ellipse at 30% 40%, rgba(124, 58, 237, 0.12) 0%, transparent 50%),
+                  radial-gradient(ellipse at 70% 60%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
+                  linear-gradient(180deg, #050510 0%, #080820 100%);
+    }
+    .gl-product-visual {
+      border: 1px solid rgba(124, 58, 237, 0.2);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(160deg, rgba(124, 58, 237, 0.06), rgba(0, 212, 255, 0.04));
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .gl-product-visual::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+    }
+    .gl-metric-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .gl-metric-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      text-align: center;
+    }
+    .gl-metric-card__value {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .gl-metric-card__label {
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .gl-chart-area {
+      height: 120px;
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .gl-chart-area svg {
+      width: 100%;
+      height: 100%;
+    }
+    .gl-funnel {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .gl-funnel__step {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      border-left: 3px solid transparent;
+      transition: all var(--transition-fast);
+    }
+    .gl-funnel__step:hover {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .gl-funnel__step--1 { border-left-color: var(--accent-cyan); }
+    .gl-funnel__step--2 { border-left-color: var(--accent-blue); }
+    .gl-funnel__step--3 { border-left-color: var(--accent-purple); }
+    .gl-funnel__step--4 { border-left-color: var(--accent-green); }
+    .gl-funnel__bar {
+      height: 8px;
+      border-radius: 4px;
+      flex: 1;
+      background: var(--bg-primary);
+      overflow: hidden;
+    }
+    .gl-funnel__bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 1s ease;
+    }
+    .gl-funnel__label {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      min-width: 100px;
+    }
+    .gl-funnel__value {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-primary);
+      min-width: 50px;
+      text-align: right;
+    }
+    .gl-insight-card {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(0, 212, 255, 0.05));
+      border: 1px solid rgba(124, 58, 237, 0.15);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+    }
+    .gl-insight-card__header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent-purple);
+      font-weight: 600;
+    }
+    @media (max-width: 768px) {
+      .gl-metric-row { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="favicon.svg" alt="Alephic Labs" class="nav__logo-icon" style="border-radius:8px;" />
+        Alephic Labs
+      </a>
+      <div class="nav__links">
+        <a href="/" class="nav__link">Home</a>
+        <a href="app-studio" class="nav__link">App Studio</a>
+        <a href="agency" class="nav__link">Agency</a>
+        <a href="growlytics" class="nav__link active">Growlytics AI</a>
+        <a href="ai-lab" class="nav__link">AI Lab</a>
+        <a href="https://app.alephiclabs.com/signup" class="nav__link" target="_blank" rel="noopener noreferrer">Client Portal</a>
+        <a href="contact" class="nav__cta">Get in Touch</a>
+      </div>
+      <button class="nav__toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="/">Home</a>
+    <a href="app-studio">App Studio</a>
+    <a href="agency">Agency</a>
+    <a href="growlytics">Growlytics AI</a>
+    <a href="ai-lab">AI Lab</a>
+    <a href="contact">Contact</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero gl-gradient-bg">
+    <div class="hero__grid"></div>
+    <div class="hero__orb hero__orb--1" style="background:rgba(124,58,237,0.08);"></div>
+    <div class="hero__orb hero__orb--2" style="background:rgba(0,212,255,0.06);"></div>
+    <div class="hero__orb hero__orb--3" style="background:rgba(124,58,237,0.05);"></div>
+    <canvas id="hero-particles" style="position:absolute;inset:0;z-index:1;pointer-events:none;"></canvas>
+
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="hero__content" style="max-width:700px;">
+        <div class="hero__badge" style="border-color:rgba(124,58,237,0.2);background:rgba(124,58,237,0.08);color:var(--accent-purple);">
+          <span class="hero__badge-dot" style="background:var(--accent-purple);"></span>
+          Flagship Product
+        </div>
+        <h1 style="font-size:clamp(2.5rem,5vw,4rem);">
+          <span class="text-gradient">Growlytics AI</span><br/>
+          <span style="font-size:0.55em;color:var(--text-muted);font-weight:400;letter-spacing:0;">Marketing Intelligence That Asks the Right Questions</span>
+        </h1>
+        <p class="hero__description" style="font-size:1.1rem;">
+          Most analytics tools show you what happened. Growlytics AI tells you <strong style="color:var(--text-primary);">what to do next</strong>. Connect your GA4 data and unlock advanced funnel analysis, creative performance dashboards, LTV time series, and AI-driven growth recommendations built on probabilistic thinking.
+        </p>
+        <div class="hero__actions">
+          <a href="#early-access" class="btn btn--primary btn--lg" style="background:linear-gradient(135deg,var(--accent-purple),var(--accent-cyan));">
+            Request Early Access <span class="btn__icon">&rarr;</span>
+          </a>
+          <a href="#features" class="btn btn--secondary">See Features</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== THE PROBLEM ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="feature-block reveal">
+        <div>
+          <span class="section-label">The Problem</span>
+          <h2>Analytics Tools Ask the <span class="text-gradient">Wrong Questions</span></h2>
+          <p class="mt-3" style="color:var(--text-muted);line-height:1.8;max-width:520px;">
+            We've interacted with dozens of growth & performance marketing AI platforms. The pattern is clear: most dashboards are built on surface-level prompts that generate surface-level insights.
+          </p>
+          <p style="color:var(--text-muted);line-height:1.8;max-width:520px;">
+            Any analyst can map out a user funnel and report click-to-install rates. But <strong style="color:var(--text-primary);">only a few will think to calculate the conditional probability of a specific event with that of conversion and map out a correlation table.</strong> That's the difference between reporting and intelligence.
+          </p>
+          <div class="gl-insight-card mt-4" style="max-width:520px;">
+            <div class="gl-insight-card__header">
+              <span>&#9670;</span> Our Thesis
+            </div>
+            <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:0;line-height:1.7;">
+              If we're going to build a SaaS AI platform tailored towards growth strategy, we need to ask the right questions first. The recent advancements in AI sub-agents, MCP server integrations, Claude Code, and 3rd-party AI tools make this not just possible — but inevitable.
+            </p>
+          </div>
+        </div>
+        <div>
+          <!-- Comparison visual -->
+          <div style="display:flex;flex-direction:column;gap:1.5rem;">
+            <div class="card" style="border-color:rgba(255,80,80,0.15);padding:1.5rem;">
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                <span style="color:#ff5050;font-size:1.2rem;">&#10005;</span>
+                <span style="font-family:var(--font-mono);font-size:0.8rem;color:#ff5050;font-weight:600;">TYPICAL ANALYTICS</span>
+              </div>
+              <p style="font-size:0.9rem;color:var(--text-dim);margin-bottom:0.75rem;">"What is the click-to-install rate?"</p>
+              <p style="font-size:0.9rem;color:var(--text-dim);margin-bottom:0.75rem;">"Show me top campaigns by spend"</p>
+              <p style="font-size:0.9rem;color:var(--text-dim);margin-bottom:0;">"What's the DAU trend this month?"</p>
+            </div>
+            <div class="card card--featured" style="padding:1.5rem;">
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                <span style="color:var(--accent-cyan);font-size:1.2rem;">&#10003;</span>
+                <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--accent-cyan);font-weight:600;">GROWLYTICS AI</span>
+              </div>
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:0.75rem;">"What is P(conversion | viewed_tutorial AND completed_onboarding)?"</p>
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:0.75rem;">"Which event sequence has the highest correlation with 90-day LTV?"</p>
+              <p style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:0;">"Given current creative fatigue rate, when should we rotate ad sets?"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCT PREVIEW ========== -->
+  <section class="section section--alt" id="features">
+    <div class="container">
+      <div class="text-center mb-8 reveal">
+        <span class="section-label" style="justify-content:center;">Product Preview</span>
+        <h2>What <span class="text-gradient">Growlytics AI</span> Delivers</h2>
+        <p class="section-subtitle mx-auto mt-2">
+          The MVP connects directly to your GA4 property. Plug in your Measurement ID and unlock a suite of advanced analytics views that go far beyond standard reporting.
+        </p>
+      </div>
+
+      <!-- Dashboard Mockup -->
+      <div class="gl-product-visual reveal mb-8">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;">
+          <div style="display:flex;align-items:center;gap:0.75rem;">
+            <div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--accent-purple),var(--accent-cyan));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.85rem;color:#050510;">G</div>
+            <div>
+              <div style="font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--text-primary);">Growlytics AI Dashboard</div>
+              <div style="font-size:0.75rem;color:var(--text-dim);">GA4 Property: UA-XXXXXXX | Last 30 Days</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:0.5rem;">
+            <span class="tag tag--green" style="font-size:0.7rem;">Connected</span>
+            <span class="tag tag--purple" style="font-size:0.7rem;">AI Active</span>
+          </div>
+        </div>
+
+        <!-- Metrics Row -->
+        <div class="gl-metric-row">
+          <div class="gl-metric-card">
+            <div class="gl-metric-card__value" style="color:var(--accent-cyan);">14,832</div>
+            <div class="gl-metric-card__label">Total Sessions</div>
+          </div>
+          <div class="gl-metric-card">
+            <div class="gl-metric-card__value" style="color:var(--accent-green);">34.2%</div>
+            <div class="gl-metric-card__label">Conversion Rate</div>
+          </div>
+          <div class="gl-metric-card">
+            <div class="gl-metric-card__value" style="color:var(--accent-purple);">$12.40</div>
+            <div class="gl-metric-card__label">Avg LTV (90d)</div>
+          </div>
+          <div class="gl-metric-card">
+            <div class="gl-metric-card__value" style="color:var(--accent-orange);">0.87</div>
+            <div class="gl-metric-card__label">Corr. Score</div>
+          </div>
+        </div>
+
+        <!-- Chart + Funnel -->
+        <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:1rem;">
+          <div>
+            <div style="font-size:0.8rem;font-weight:600;color:var(--text-secondary);margin-bottom:0.75rem;">LTV Time Series (90-Day Cohort)</div>
+            <div class="gl-chart-area">
+              <svg viewBox="0 0 400 120" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="rgba(124,58,237,0.3)"/>
+                    <stop offset="100%" stop-color="rgba(124,58,237,0)"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,100 Q50,90 80,75 T160,60 T240,40 T320,45 T400,20" fill="none" stroke="var(--accent-purple)" stroke-width="2"/>
+                <path d="M0,100 Q50,90 80,75 T160,60 T240,40 T320,45 T400,20 L400,120 L0,120 Z" fill="url(#chartGrad)"/>
+                <path d="M0,95 Q60,85 100,80 T200,65 T300,55 T400,50" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6"/>
+              </svg>
+            </div>
+            <div style="display:flex;gap:1.5rem;font-size:0.7rem;color:var(--text-dim);margin-top:0.5rem;">
+              <span style="display:flex;align-items:center;gap:0.4rem;"><span style="width:12px;height:2px;background:var(--accent-purple);display:inline-block;"></span> LTV Actual</span>
+              <span style="display:flex;align-items:center;gap:0.4rem;"><span style="width:12px;height:2px;background:var(--accent-cyan);display:inline-block;border-style:dashed;"></span> LTV Predicted</span>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:0.8rem;font-weight:600;color:var(--text-secondary);margin-bottom:0.75rem;">Conversion Funnel</div>
+            <div class="gl-funnel">
+              <div class="gl-funnel__step gl-funnel__step--1">
+                <span class="gl-funnel__label">Page View</span>
+                <div class="gl-funnel__bar"><div class="gl-funnel__bar-fill" style="width:100%;background:var(--accent-cyan);"></div></div>
+                <span class="gl-funnel__value">100%</span>
+              </div>
+              <div class="gl-funnel__step gl-funnel__step--2">
+                <span class="gl-funnel__label">Signup</span>
+                <div class="gl-funnel__bar"><div class="gl-funnel__bar-fill" style="width:62%;background:var(--accent-blue);"></div></div>
+                <span class="gl-funnel__value">62%</span>
+              </div>
+              <div class="gl-funnel__step gl-funnel__step--3">
+                <span class="gl-funnel__label">Activation</span>
+                <div class="gl-funnel__bar"><div class="gl-funnel__bar-fill" style="width:38%;background:var(--accent-purple);"></div></div>
+                <span class="gl-funnel__value">38%</span>
+              </div>
+              <div class="gl-funnel__step gl-funnel__step--4">
+                <span class="gl-funnel__label">Purchase</span>
+                <div class="gl-funnel__bar"><div class="gl-funnel__bar-fill" style="width:18%;background:var(--accent-green);"></div></div>
+                <span class="gl-funnel__value">18%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Insight -->
+        <div class="gl-insight-card mt-4">
+          <div class="gl-insight-card__header">
+            <span>&#9670;</span> AI Insight — Conditional Probability Analysis
+          </div>
+          <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:0;line-height:1.7;font-family:var(--font-mono);">
+            Users who complete onboarding AND interact with feature_X within the first session have a <strong style="color:var(--accent-cyan);">P(purchase) = 0.47</strong> vs baseline of 0.18. Recommendation: prioritize feature_X discovery in onboarding flow. Estimated revenue uplift: <strong style="color:var(--accent-green);">+23.4%</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES GRID ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-8 reveal">
+        <span class="section-label" style="justify-content:center;">MVP Features</span>
+        <h2>What Ships <span class="text-gradient">Day One</span></h2>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card reveal reveal-delay-1">
+          <div class="card__icon card__icon--purple">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+          </div>
+          <h3>Advanced Funnel Analysis</h3>
+          <p>Go beyond basic funnel views. See conditional conversion probabilities, drop-off correlation analysis, and event-sequence optimization recommendations.</p>
+        </div>
+
+        <div class="card reveal reveal-delay-2">
+          <div class="card__icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3>Creative Performance</h3>
+          <p>Track ad creative effectiveness across campaigns, detect fatigue signals before they impact ROAS, and get AI-generated creative rotation schedules.</p>
+        </div>
+
+        <div class="card reveal reveal-delay-3">
+          <div class="card__icon card__icon--green">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>LTV Time Series</h3>
+          <p>Cohort-based lifetime value modeling with predictive projections. Understand revenue curves by acquisition source, geography, and user segment.</p>
+        </div>
+
+        <div class="card reveal reveal-delay-1">
+          <div class="card__icon card__icon--orange">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>GA4 Direct Integration</h3>
+          <p>Simply connect your GA4 Measurement ID and Growlytics AI pulls your data automatically. No manual exports, no CSV uploads, no engineering work required.</p>
+        </div>
+
+        <div class="card reveal reveal-delay-2">
+          <div class="card__icon card__icon--blue">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Correlation Mapping</h3>
+          <p>Automatically discover which user events, properties, and sequences have the highest correlation with key conversion and retention outcomes.</p>
+        </div>
+
+        <div class="card reveal reveal-delay-3">
+          <div class="card__icon card__icon--pink">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>AI Growth Recommendations</h3>
+          <p>Not just dashboards — actionable recommendations. Growlytics AI interprets data patterns and suggests specific optimizations for campaigns, funnels, and product.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="text-center mb-8 reveal">
+        <span class="section-label" style="justify-content:center;">Architecture</span>
+        <h2>How <span class="text-gradient">Growlytics AI</span> Works</h2>
+      </div>
+
+      <!-- Integration Flow -->
+      <div class="integration-flow reveal mb-6">
+        <div class="integration-flow__node">
+          <svg width="16" height="16" fill="none" stroke="var(--accent-orange)" stroke-width="2"><circle cx="8" cy="8" r="6"/></svg>
+          GA4 Property
+        </div>
+        <span class="integration-flow__arrow">&rarr;</span>
+        <div class="integration-flow__node">
+          <svg width="16" height="16" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/></svg>
+          MCP Server
+        </div>
+        <span class="integration-flow__arrow">&rarr;</span>
+        <div class="integration-flow__node">
+          <svg width="16" height="16" fill="none" stroke="var(--accent-purple)" stroke-width="2"><path d="M2 8h12M8 2v12"/></svg>
+          AI Analysis Engine
+        </div>
+        <span class="integration-flow__arrow">&rarr;</span>
+        <div class="integration-flow__node">
+          <svg width="16" height="16" fill="none" stroke="var(--accent-green)" stroke-width="2"><polyline points="2 10 6 14 14 4"/></svg>
+          Actionable Insights
+        </div>
+      </div>
+
+      <div class="grid grid-2 reveal">
+        <div class="card">
+          <h3>MCP Server Integration</h3>
+          <p style="margin-bottom:1rem;">
+            At the core of Growlytics AI is our expertise in connecting marketing platform data as MCP (Model Context Protocol) servers. This allows AI models to query and analyze your data in real-time, dynamically, without predefined report templates.
+          </p>
+          <div class="code-block" style="font-size:0.75rem;">
+            <div class="code-block__header">
+              <span class="code-block__dot code-block__dot--red"></span>
+              <span class="code-block__dot code-block__dot--yellow"></span>
+              <span class="code-block__dot code-block__dot--green"></span>
+            </div>
+            <div class="code-block__body">
+<span class="comment">// MCP Server → AI Analysis Pipeline</span>
+<span class="keyword">const</span> mcp = <span class="keyword">new</span> <span class="function">MCPServer</span>({
+  <span class="function">source</span>: <span class="string">'ga4'</span>,
+  <span class="function">propertyId</span>: <span class="string">'GA-XXXXXXX'</span>,
+  <span class="function">realtime</span>: <span class="keyword">true</span>
+});
+
+<span class="keyword">const</span> insights = <span class="keyword">await</span> <span class="function">analyze</span>({
+  <span class="function">model</span>: <span class="string">'claude-opus'</span>,
+  <span class="function">context</span>: mcp.<span class="function">stream</span>(),
+  <span class="function">questions</span>: <span class="function">generateQuestions</span>()
+});
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>The Right Questions Engine</h3>
+          <p style="margin-bottom:1rem;">
+            What sets Growlytics apart is not the data — it's the questions we ask. Our AI doesn't just compute metrics. It performs probabilistic analysis, identifies hidden correlations, and generates hypotheses that a standard dashboard would never surface.
+          </p>
+          <ul class="feature-list">
+            <li>Conditional probability calculations for event pairs</li>
+            <li>Behavioral cohort clustering and anomaly detection</li>
+            <li>Time-decay attribution modeling beyond last-click</li>
+            <li>Creative fatigue prediction using engagement curves</li>
+            <li>Cross-channel correlation analysis</li>
+            <li>Revenue uplift simulation for proposed changes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== UPCOMING INTEGRATIONS ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-8 reveal">
+        <span class="section-label" style="justify-content:center;">Roadmap</span>
+        <h2>Upcoming <span class="text-gradient">Integrations</span></h2>
+        <p class="section-subtitle mx-auto mt-2">
+          GA4 is just the beginning. Our roadmap includes direct integrations with every major marketing and analytics platform.
+        </p>
+      </div>
+
+      <div class="grid grid-4 reveal">
+        <div class="card" style="padding:1.5rem;text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">&#9678;</div>
+          <h4>Google Ads</h4>
+          <span class="tag tag--green" style="font-size:0.7rem;margin-top:0.5rem;">Coming Soon</span>
+        </div>
+        <div class="card" style="padding:1.5rem;text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">&#9678;</div>
+          <h4>Meta Ads</h4>
+          <span class="tag tag--green" style="font-size:0.7rem;margin-top:0.5rem;">Coming Soon</span>
+        </div>
+        <div class="card" style="padding:1.5rem;text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">&#9678;</div>
+          <h4>TikTok Ads</h4>
+          <span class="tag tag--orange" style="font-size:0.7rem;margin-top:0.5rem;">Planned</span>
+        </div>
+        <div class="card" style="padding:1.5rem;text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">&#9678;</div>
+          <h4>Apple Search Ads</h4>
+          <span class="tag tag--orange" style="font-size:0.7rem;margin-top:0.5rem;">Planned</span>
+        </div>
+        <div class="card" style="padding:1.5rem;text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">&#9678;</div>
+          <h4>Mixpanel</h4>
+          <span class="tag tag--orange" style="font-size:0.7rem;margin-top:0.5rem;">Planned</span>
+        </div>
+        <div class="card" style="padding:1.5rem;text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">&#9678;</div>
+          <h4>Amplitude</h4>
+          <span class="tag tag--orange" style="font-size:0.7rem;margin-top:0.5rem;">Planned</span>
+        </div>
+        <div class="card" style="padding:1.5rem;text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">&#9678;</div>
+          <h4>BigQuery</h4>
+          <span class="tag tag--green" style="font-size:0.7rem;margin-top:0.5rem;">Coming Soon</span>
+        </div>
+        <div class="card" style="padding:1.5rem;text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">&#9678;</div>
+          <h4>Adjust / AppsFlyer</h4>
+          <span class="tag tag--orange" style="font-size:0.7rem;margin-top:0.5rem;">Planned</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONSULTANCY ========== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="feature-block reveal">
+        <div>
+          <span class="section-label">Beyond SaaS</span>
+          <h2>AI Marketing <span class="text-gradient">Consultancy</span></h2>
+          <p class="mt-3" style="color:var(--text-muted);line-height:1.8;max-width:520px;">
+            Growlytics AI isn't just a product — it's backed by our consultancy arm. We work directly with businesses to implement AI-powered marketing automation, campaign management, and data analysis solutions that transform how they operate.
+          </p>
+          <ul class="feature-list mt-4">
+            <li>Campaign bid management powered by AI</li>
+            <li>Automated dashboard creation and reporting</li>
+            <li>Paid campaign management and optimization via AI</li>
+            <li>Custom MCP server setup for your marketing stack</li>
+            <li>Strategic growth consulting and implementation</li>
+          </ul>
+          <a href="contact" class="btn btn--primary mt-4" style="background:linear-gradient(135deg,var(--accent-purple),var(--accent-cyan));">
+            Book a Consultation <span class="btn__icon">&rarr;</span>
+          </a>
+        </div>
+        <div>
+          <div class="card card--featured" style="padding:2rem;">
+            <h4 style="margin-bottom:1.25rem;">What We Deliver</h4>
+            <div style="display:flex;flex-direction:column;gap:1rem;">
+              <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+                <div style="width:36px;height:36px;border-radius:8px;background:var(--accent-cyan-dim);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent-cyan);font-weight:700;">1</div>
+                <div>
+                  <div style="font-weight:600;color:var(--text-primary);font-size:0.95rem;">Audit & Strategy</div>
+                  <div style="font-size:0.85rem;color:var(--text-dim);">Deep-dive into your current marketing stack, data flows, and performance metrics.</div>
+                </div>
+              </div>
+              <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+                <div style="width:36px;height:36px;border-radius:8px;background:var(--accent-purple-dim);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent-purple);font-weight:700;">2</div>
+                <div>
+                  <div style="font-weight:600;color:var(--text-primary);font-size:0.95rem;">AI Implementation</div>
+                  <div style="font-size:0.85rem;color:var(--text-dim);">Set up MCP servers, connect data sources, deploy AI analysis pipelines.</div>
+                </div>
+              </div>
+              <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+                <div style="width:36px;height:36px;border-radius:8px;background:rgba(16,185,129,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent-green);font-weight:700;">3</div>
+                <div>
+                  <div style="font-weight:600;color:var(--text-primary);font-size:0.95rem;">Optimization & Scale</div>
+                  <div style="font-size:0.85rem;color:var(--text-dim);">Ongoing campaign optimization, bid management, and growth strategy powered by AI.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EARLY ACCESS ========== -->
+  <section class="section" id="early-access">
+    <div class="container">
+      <div class="text-center mb-6 reveal">
+        <span class="section-label" style="justify-content:center;">Early Access</span>
+        <h2>Be the First to Use <span class="text-gradient">Growlytics AI</span></h2>
+        <p class="section-subtitle mx-auto mt-2">
+          We're opening early access to a limited number of businesses. Submit your GA4 property details and we'll onboard you to the beta.
+        </p>
+      </div>
+
+      <form class="form mx-auto reveal" data-form="growlytics-early-access" style="max-width:600px;">
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label">Full Name <span>*</span></label>
+            <input type="text" class="form__input" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Email <span>*</span></label>
+            <input type="email" class="form__input" name="email" placeholder="you@company.com" required />
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label">Company</label>
+            <input type="text" class="form__input" name="company" placeholder="Your company" />
+          </div>
+          <div class="form__group">
+            <label class="form__label">GA4 Measurement ID</label>
+            <input type="text" class="form__input" name="ga4_id" placeholder="G-XXXXXXXXXX" />
+          </div>
+        </div>
+        <div class="form__group">
+          <label class="form__label">What are you hoping to learn from your data?</label>
+          <textarea class="form__textarea" name="goals" placeholder="Tell us about your analytics challenges and what insights you're looking for..." style="min-height:100px;"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg w-full" style="background:linear-gradient(135deg,var(--accent-purple),var(--accent-cyan));justify-content:center;">
+          Request Early Access <span class="btn__icon">&rarr;</span>
+        </button>
+        <p class="mt-3 text-center" style="font-size:0.8rem;color:var(--text-dim);">
+          Limited spots available. We'll review applications on a rolling basis.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section" style="background:radial-gradient(ellipse at center,rgba(124,58,237,0.08),transparent 60%);">
+    <div class="container reveal">
+      <span class="section-label" style="justify-content:center;">Let's Talk</span>
+      <h2>Ready to Transform Your <span class="text-gradient">Growth Strategy</span>?</h2>
+      <p>Whether you want early access to Growlytics AI or need a custom AI marketing solution — we're here.</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;">
+        <a href="contact" class="btn btn--primary" style="background:linear-gradient(135deg,var(--accent-purple),var(--accent-cyan));">Contact Us</a>
+        <a href="agency" class="btn btn--secondary">Agency Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">
+            <img src="favicon.svg" alt="" width="28" height="28" style="border-radius:6px;" /> Alephic Labs
+          </div>
+          <p>AI-first company building at the intersection of mobile apps, digital services, and intelligent marketing analytics.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Verticals</h4>
+          <a href="app-studio">App Studio</a>
+          <a href="agency">Digital Agency</a>
+          <a href="growlytics">Growlytics AI</a>
+          <a href="ai-lab">AI Lab</a>
+        </div>
+        <div class="footer__col">
+          <h4>Growlytics</h4>
+          <a href="growlytics#features">Features</a>
+          <a href="growlytics#early-access">Early Access</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="contact">Contact</a>
+          <a href="mailto:contact@alephiclabs.com">Email Us</a>
+          <a href="privacy">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Alephic Labs. All rights reserved.</span>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/alperen-sirin-10794197/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

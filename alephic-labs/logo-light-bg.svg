@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 80" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ===== LOGOMARK (Compact — light bg) ===== -->
+  <g transform="translate(0, 0)">
+    <rect width="80" height="80" rx="20" fill="url(#grad)"/>
+
+    <!-- Main diagonal -->
+    <line x1="26" y1="58" x2="54" y2="22" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Upper-left curve -->
+    <path d="M 45 31 Q 34 20, 24 24" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+
+    <!-- Lower-right curve -->
+    <path d="M 35 49 Q 46 60, 56 56" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+
+    <!-- Dots -->
+    <circle cx="24" cy="24" r="3" fill="#ffffff"/>
+    <circle cx="56" cy="56" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- ===== WORDMARK (Single line — dark text) ===== -->
+  <text x="100" y="52" font-family="'Space Grotesk', 'Inter', -apple-system, sans-serif" font-size="36" font-weight="700" fill="#0a0a1f" letter-spacing="-0.5">Alephic<tspan fill="url(#grad)"> Labs</tspan></text>
+</svg>

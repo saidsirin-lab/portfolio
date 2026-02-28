@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KT7RC23B1B"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KT7RC23B1B');</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Agency — Alephic Labs | Web Dev, App Dev, Marketing & AI Solutions</title>
+  <meta name="description" content="Alephic Labs Digital Agency connects small businesses in the US and first-tier markets with vetted experts for web development, mobile app development, performance marketing, SEO/ASO, and AI-integrated automation." />
+  <meta name="keywords" content="digital agency, web development, mobile app development, performance marketing, SEO, ASO, AI solutions, business automation, digital marketing agency, small business services, React, Next.js, Flutter, Google Ads, Meta Ads, San Francisco" />
+  <meta name="author" content="Alephic Labs" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://alephiclabs.com/agency" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Alephic Labs" />
+  <meta property="og:title" content="Digital Agency — Alephic Labs | Expert Talent for Your Projects" />
+  <meta property="og:description" content="We connect small businesses with vetted experts for web dev, app dev, performance marketing, SEO/ASO, and AI solutions." />
+  <meta property="og:url" content="https://alephiclabs.com/agency" />
+  <meta property="og:image" content="https://alephiclabs.com/logo-full.png" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Digital Agency — Alephic Labs" />
+  <meta name="twitter:description" content="Web dev, app dev, performance marketing, SEO/ASO, and AI-integrated solutions for small businesses and startups." />
+  <meta name="twitter:image" content="https://alephiclabs.com/logo-full.png" />
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="logo-icon.png" />
+
+  <!-- Structured Data: ProfessionalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Alephic Labs Digital Agency",
+    "url": "https://alephiclabs.com/agency",
+    "logo": "https://alephiclabs.com/logo-icon.png",
+    "description": "Full-service digital agency connecting small businesses with expert talent for web development, mobile app development, digital marketing, performance marketing, SEO/ASO, and AI-integrated solutions.",
+    "email": "contact@alephiclabs.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "areaServed": ["United States", "United Kingdom", "Canada", "Australia", "European Union"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Agency Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Web Development"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mobile App Development"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digital Marketing"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Performance Marketing"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO / ASO"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Solutions & Automation"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of businesses do you work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We primarily serve small businesses, startups, and mid-sized companies in the US and first-tier international markets (UK, Canada, Australia, EU)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you vet your expert partners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every expert goes through a multi-stage vetting process: portfolio review, technical assessment, communication evaluation, and trial project."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the typical project timeline?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A typical web development project runs 4-8 weeks, mobile apps 8-16 weeks, and marketing engagements are usually ongoing monthly retainers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer ongoing support after delivery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All projects include a 30-day post-delivery support period. Beyond that, we offer flexible monthly retainer packages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I request AI-specific integrations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. AI integration is one of our core competencies, from chatbots to automated workflows and LLM-powered features."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="favicon.svg" alt="Alephic Labs" class="nav__logo-icon" style="border-radius:8px;" />
+        Alephic Labs
+      </a>
+      <div class="nav__links">
+        <a href="/" class="nav__link">Home</a>
+        <a href="app-studio" class="nav__link">App Studio</a>
+        <a href="agency" class="nav__link active">Agency</a>
+        <a href="growlytics" class="nav__link">Growlytics AI</a>
+        <a href="ai-lab" class="nav__link">AI Lab</a>
+        <a href="https://app.alephiclabs.com/signup" class="nav__link" target="_blank" rel="noopener noreferrer">Client Portal</a>
+        <a href="contact" class="nav__cta">Get in Touch</a>
+      </div>
+      <button class="nav__toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="/">Home</a>
+    <a href="app-studio">App Studio</a>
+    <a href="agency">Agency</a>
+    <a href="growlytics">Growlytics AI</a>
+    <a href="ai-lab">AI Lab</a>
+    <a href="contact">Contact</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero hero--short">
+    <div class="hero__grid"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Digital Agency
+        </div>
+        <h1>Your Vision.<br/><span class="text-gradient">Our Experts.</span></h1>
+        <p class="hero__description">
+          We connect small businesses and startups in the US and first-tier markets with our curated network of senior developers, marketers, and AI specialists to deliver projects on time and on budget.
+        </p>
+        <div class="hero__actions">
+          <a href="#apply" class="btn btn--primary">Apply Now <span class="btn__icon">&darr;</span></a>
+          <a href="#services" class="btn btn--secondary">View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="text-center mb-8 reveal">
+        <span class="section-label" style="justify-content:center;">How It Works</span>
+        <h2>From Application <span class="text-gradient">to Delivery</span></h2>
+        <p class="section-subtitle mx-auto mt-2">
+          A straightforward, transparent process designed to get your project moving fast with the right people.
+        </p>
+      </div>
+
+      <div class="process reveal">
+        <div class="process__step">
+          <div class="process__number">01</div>
+          <h4>Apply</h4>
+          <p>Fill out the project application form below. Tell us about your business, goals, and what you need built.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number">02</div>
+          <h4>Match</h4>
+          <p>We review your application and match you with the ideal team from our network of vetted specialists.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number">03</div>
+          <h4>Execute</h4>
+          <p>Your dedicated team begins work with clear milestones, regular updates, and transparent communication.</p>
+        </div>
+        <div class="process__step">
+          <div class="process__number">04</div>
+          <h4>Deliver</h4>
+          <p>We deliver the finished project, provide documentation, and offer ongoing support and optimization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <div class="text-center mb-8 reveal">
+        <span class="section-label" style="justify-content:center;">Our Services</span>
+        <h2>What We <span class="text-gradient">Deliver</span></h2>
+        <p class="section-subtitle mx-auto mt-2">
+          A full spectrum of digital services, each backed by experienced practitioners who have shipped at scale.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card reveal reveal-delay-1">
+          <div class="card__icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Custom websites, web applications, e-commerce platforms, SaaS products, and admin dashboards built with modern frameworks and best practices.</p>
+          <div class="mt-2" style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="tag" style="font-size:0.7rem;">React</span>
+            <span class="tag" style="font-size:0.7rem;">Next.js</span>
+            <span class="tag" style="font-size:0.7rem;">Node.js</span>
+            <span class="tag" style="font-size:0.7rem;">Python</span>
+          </div>
+        </div>
+
+        <div class="card reveal reveal-delay-2">
+          <div class="card__icon card__icon--purple">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3>Mobile App Development</h3>
+          <p>Native and cross-platform mobile applications for iOS and Android. From consumer apps to enterprise mobility solutions.</p>
+          <div class="mt-2" style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="tag tag--purple" style="font-size:0.7rem;">Swift</span>
+            <span class="tag tag--purple" style="font-size:0.7rem;">Kotlin</span>
+            <span class="tag tag--purple" style="font-size:0.7rem;">Flutter</span>
+            <span class="tag tag--purple" style="font-size:0.7rem;">React Native</span>
+          </div>
+        </div>
+
+        <div class="card reveal reveal-delay-3">
+          <div class="card__icon card__icon--green">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Comprehensive digital marketing strategies including social media management, content marketing, email campaigns, and brand positioning.</p>
+          <div class="mt-2" style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="tag tag--green" style="font-size:0.7rem;">Strategy</span>
+            <span class="tag tag--green" style="font-size:0.7rem;">Content</span>
+            <span class="tag tag--green" style="font-size:0.7rem;">Social</span>
+            <span class="tag tag--green" style="font-size:0.7rem;">Email</span>
+          </div>
+        </div>
+
+        <div class="card reveal reveal-delay-1">
+          <div class="card__icon card__icon--orange">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+          </div>
+          <h3>Performance Marketing</h3>
+          <p>ROI-driven paid advertising campaigns across Google Ads, Meta, TikTok, and programmatic channels. Data-backed bid management and creative optimization.</p>
+          <div class="mt-2" style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="tag tag--orange" style="font-size:0.7rem;">PPC</span>
+            <span class="tag tag--orange" style="font-size:0.7rem;">Meta Ads</span>
+            <span class="tag tag--orange" style="font-size:0.7rem;">Google Ads</span>
+            <span class="tag tag--orange" style="font-size:0.7rem;">TikTok</span>
+          </div>
+        </div>
+
+        <div class="card reveal reveal-delay-2">
+          <div class="card__icon card__icon--pink">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>SEO / ASO</h3>
+          <p>Search engine optimization for web properties and app store optimization for mobile apps. Technical audits, keyword strategy, and content optimization.</p>
+          <div class="mt-2" style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="tag tag--purple" style="font-size:0.7rem;">On-Page</span>
+            <span class="tag tag--purple" style="font-size:0.7rem;">Technical</span>
+            <span class="tag tag--purple" style="font-size:0.7rem;">Link Building</span>
+            <span class="tag tag--purple" style="font-size:0.7rem;">ASO</span>
+          </div>
+        </div>
+
+        <div class="card reveal reveal-delay-3">
+          <div class="card__icon card__icon--blue">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>AI Solutions & Automation</h3>
+          <p>Custom AI integrations, chatbots, workflow automation, data pipeline construction, and intelligent business process optimization powered by the latest AI models.</p>
+          <div class="mt-2" style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="tag" style="font-size:0.7rem;">LLMs</span>
+            <span class="tag" style="font-size:0.7rem;">Automation</span>
+            <span class="tag" style="font-size:0.7rem;">Chatbots</span>
+            <span class="tag" style="font-size:0.7rem;">Pipelines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="feature-block reveal">
+        <div>
+          <span class="section-label">Why Alephic Agency</span>
+          <h2>Talent That <span class="text-gradient">Delivers</span></h2>
+          <p class="mt-3" style="color:var(--text-muted);line-height:1.8;max-width:500px;">
+            We're not a marketplace. We're a curated network. Every expert in our pool has been vetted for technical proficiency, communication skills, and delivery track record. You get a dedicated team, not freelancers.
+          </p>
+          <ul class="feature-list mt-4">
+            <li>Vetted, senior-level professionals only</li>
+            <li>Dedicated project management and communication</li>
+            <li>Transparent pricing with milestone-based delivery</li>
+            <li>Serving US and first-tier international markets</li>
+            <li>Post-delivery support and optimization included</li>
+          </ul>
+        </div>
+        <div>
+          <div class="stats" style="grid-template-columns:repeat(2,1fr);">
+            <div class="stat" style="background:var(--bg-card);border-radius:var(--radius-md);border:1px solid var(--border-color);">
+              <div class="stat__value" data-count="50" data-suffix="+">0</div>
+              <div class="stat__label">Expert Partners</div>
+            </div>
+            <div class="stat" style="background:var(--bg-card);border-radius:var(--radius-md);border:1px solid var(--border-color);">
+              <div class="stat__value" data-count="8" data-suffix="">0</div>
+              <div class="stat__label">Service Areas</div>
+            </div>
+            <div class="stat" style="background:var(--bg-card);border-radius:var(--radius-md);border:1px solid var(--border-color);">
+              <div class="stat__value" data-count="12" data-suffix="">0</div>
+              <div class="stat__label">Industries</div>
+            </div>
+            <div class="stat" style="background:var(--bg-card);border-radius:var(--radius-md);border:1px solid var(--border-color);">
+              <div class="stat__value" data-count="98" data-suffix="%">0</div>
+              <div class="stat__label">On-Time Delivery</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== APPLICATION FORM ========== -->
+  <section class="section section--alt" id="apply">
+    <div class="container">
+      <div class="mb-8 reveal">
+        <span class="section-label">Start Here</span>
+        <h2>Project <span class="text-gradient">Application</span></h2>
+        <p class="section-subtitle mt-2">
+          Tell us about your business and project needs. Our team will review your application and get back to you within 48 hours with a tailored proposal.
+        </p>
+      </div>
+
+      <form class="form reveal" data-form="agency-application">
+
+        <!-- Row: Name + Email -->
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label">Full Name <span>*</span></label>
+            <input type="text" class="form__input" name="name" placeholder="John Smith" required />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Email Address <span>*</span></label>
+            <input type="email" class="form__input" name="email" placeholder="john@company.com" required />
+          </div>
+        </div>
+
+        <!-- Row: Phone + LinkedIn -->
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label">Phone Number <span>*</span></label>
+            <input type="tel" class="form__input" name="phone" placeholder="+1 (555) 000-0000" required />
+          </div>
+          <div class="form__group">
+            <label class="form__label">LinkedIn Profile</label>
+            <input type="url" class="form__input" name="linkedin" placeholder="https://linkedin.com/in/yourprofile" />
+          </div>
+        </div>
+
+        <!-- Row: Company + Employees -->
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label">Company Name <span>*</span></label>
+            <input type="text" class="form__input" name="company" placeholder="Acme Inc." required />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Number of Employees</label>
+            <select class="form__select" name="employees">
+              <option value="" disabled selected>Select range</option>
+              <option value="1-5">1 - 5</option>
+              <option value="6-20">6 - 20</option>
+              <option value="21-50">21 - 50</option>
+              <option value="51-200">51 - 200</option>
+              <option value="201+">201+</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Industry -->
+        <div class="form__group">
+          <label class="form__label">Industry <span>*</span></label>
+          <select class="form__select" name="industry" required>
+            <option value="" disabled selected>Select your industry</option>
+            <option value="ecommerce">E-Commerce & Retail</option>
+            <option value="saas">SaaS & Technology</option>
+            <option value="healthcare">Healthcare & Wellness</option>
+            <option value="finance">Finance & Fintech</option>
+            <option value="education">Education & E-Learning</option>
+            <option value="realestate">Real Estate & Property</option>
+            <option value="food">Food & Hospitality</option>
+            <option value="media">Media & Entertainment</option>
+            <option value="logistics">Logistics & Supply Chain</option>
+            <option value="professional">Professional Services</option>
+            <option value="nonprofit">Nonprofit & Social Impact</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Services Needed -->
+        <div class="form__group">
+          <label class="form__label">Services Needed <span>*</span></label>
+          <div class="form__checkbox-group">
+            <label class="form__checkbox">
+              <input type="checkbox" name="services" value="web-dev" /> Web Development
+            </label>
+            <label class="form__checkbox">
+              <input type="checkbox" name="services" value="mobile-dev" /> Mobile App Development
+            </label>
+            <label class="form__checkbox">
+              <input type="checkbox" name="services" value="digital-marketing" /> Digital Marketing
+            </label>
+            <label class="form__checkbox">
+              <input type="checkbox" name="services" value="performance-marketing" /> Performance Marketing
+            </label>
+            <label class="form__checkbox">
+              <input type="checkbox" name="services" value="seo-aso" /> SEO / ASO
+            </label>
+            <label class="form__checkbox">
+              <input type="checkbox" name="services" value="ai-solutions" /> AI Solutions & Automation
+            </label>
+            <label class="form__checkbox">
+              <input type="checkbox" name="services" value="design" /> UI/UX Design
+            </label>
+            <label class="form__checkbox">
+              <input type="checkbox" name="services" value="other" /> Other
+            </label>
+          </div>
+        </div>
+
+        <!-- Project Budget -->
+        <div class="form__group">
+          <label class="form__label">Estimated Budget</label>
+          <select class="form__select" name="budget">
+            <option value="" disabled selected>Select a range</option>
+            <option value="under-5k">Under $5,000</option>
+            <option value="5k-15k">$5,000 - $15,000</option>
+            <option value="15k-50k">$15,000 - $50,000</option>
+            <option value="50k-100k">$50,000 - $100,000</option>
+            <option value="100k+">$100,000+</option>
+          </select>
+        </div>
+
+        <!-- Project Description -->
+        <div class="form__group">
+          <label class="form__label">Project Description <span>*</span></label>
+          <textarea class="form__textarea" name="description" placeholder="Tell us about your project — objectives, timeline, specific requirements, and any additional context that would help us understand your needs." required></textarea>
+        </div>
+
+        <!-- How did you hear -->
+        <div class="form__group">
+          <label class="form__label">How did you hear about us?</label>
+          <select class="form__select" name="referral">
+            <option value="" disabled selected>Select an option</option>
+            <option value="google">Google Search</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="referral">Referral</option>
+            <option value="social">Social Media</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--lg mt-2">
+          Submit Application <span class="btn__icon">&rarr;</span>
+        </button>
+
+        <p class="mt-3" style="font-size:0.8rem;color:var(--text-dim);">
+          By submitting this form, you agree to be contacted by our team. We typically respond within 48 hours.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="text-center mb-8 reveal">
+        <span class="section-label" style="justify-content:center;">FAQ</span>
+        <h2>Common <span class="text-gradient">Questions</span></h2>
+      </div>
+
+      <div class="accordion reveal">
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            What types of businesses do you work with?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              We primarily serve small businesses, startups, and mid-sized companies in the US and first-tier international markets (UK, Canada, Australia, EU). Our sweet spot is businesses that need quality digital work but don't have the in-house team to execute it.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            How do you vet your expert partners?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              Every expert goes through a multi-stage vetting process: portfolio review, technical assessment, communication evaluation, and trial project. We only work with professionals who have demonstrable track records of delivering high-quality work on time.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            What's the typical project timeline?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              Timelines vary by scope. A typical web development project runs 4-8 weeks, mobile apps 8-16 weeks, and marketing engagements are usually ongoing monthly retainers. We'll provide a detailed timeline in your proposal.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            Do you offer ongoing support after delivery?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              Yes. All projects include a 30-day post-delivery support period. Beyond that, we offer flexible monthly retainer packages for ongoing maintenance, optimization, and feature development.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            Can I request AI-specific integrations?
+            <span class="accordion__trigger-icon">+</span>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              Absolutely. AI integration is one of our core competencies. Whether you need an AI chatbot, automated workflows, data analysis pipelines, or LLM-powered features, our team has deep experience building production-grade AI solutions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section">
+    <div class="container reveal">
+      <span class="section-label" style="justify-content:center;">Ready to Start?</span>
+      <h2>Let's Build Your <span class="text-gradient">Next Project</span></h2>
+      <p>Apply above or reach out directly — we're ready to discuss your vision.</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;">
+        <a href="#apply" class="btn btn--primary">Apply Now</a>
+        <a href="contact" class="btn btn--secondary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">
+            <img src="favicon.svg" alt="" width="28" height="28" style="border-radius:6px;" /> Alephic Labs
+          </div>
+          <p>AI-first company building at the intersection of mobile apps, digital services, and intelligent marketing analytics.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Verticals</h4>
+          <a href="app-studio">App Studio</a>
+          <a href="agency">Digital Agency</a>
+          <a href="growlytics">Growlytics AI</a>
+          <a href="ai-lab">AI Lab</a>
+        </div>
+        <div class="footer__col">
+          <h4>Agency</h4>
+          <a href="agency#services">Services</a>
+          <a href="agency#apply">Apply</a>
+          <a href="agency#process">Process</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="contact">Contact</a>
+          <a href="mailto:contact@alephiclabs.com">Email Us</a>
+          <a href="privacy">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Alephic Labs. All rights reserved.</span>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/alperen-sirin-10794197/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

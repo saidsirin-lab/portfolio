@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050510"/>
+      <stop offset="50%" stop-color="#0a0a1f"/>
+      <stop offset="100%" stop-color="#0e0e28"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="accentH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="cs" x="-5%" y="-3%" width="110%" height="112%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#bgGrad)"/>
+  <circle cx="540" cy="350" r="400" fill="#00d4ff" opacity="0.015"/>
+
+  <!-- ===== HEADER ===== -->
+  <g transform="translate(540, 52)">
+    <g transform="translate(-140, -26) scale(0.65)">
+      <rect width="80" height="80" rx="20" fill="#0a0a1f" stroke="url(#accentGrad)" stroke-width="1.2" opacity="0.6"/>
+      <line x1="26" y1="58" x2="54" y2="22" stroke="url(#accentGrad)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 45 31 Q 34 20, 24 24" stroke="#00d4ff" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+      <path d="M 35 49 Q 46 60, 56 56" stroke="#7c3aed" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+      <circle cx="24" cy="24" r="3" fill="#00d4ff"/><circle cx="56" cy="56" r="3" fill="#7c3aed"/>
+    </g>
+    <text x="20" y="10" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="36" font-weight="700" fill="url(#accentGrad)" text-anchor="middle">Alephic Labs</text>
+  </g>
+
+  <!-- ===== HERO ===== -->
+  <g transform="translate(540, 105)">
+    <!-- Icon -->
+    <g transform="translate(-160, -8)">
+      <rect x="-14" y="-20" width="28" height="42" rx="6" fill="none" stroke="#00d4ff" stroke-width="2.5"/>
+      <line x1="-5" y1="14" x2="5" y2="14" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+      <path d="M20,-14 L22,-8 L24,-14 L22,-20 Z" fill="#00d4ff" opacity="0.6"/>
+      <path d="M16,-14 L22,-12 L28,-14 L22,-16 Z" fill="#00d4ff" opacity="0.6"/>
+    </g>
+    <text x="0" y="0" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="40" font-weight="700" fill="#00d4ff" text-anchor="middle">App Studio</text>
+    <text x="0" y="28" font-family="'Inter','Segoe UI',sans-serif" font-size="17" fill="#94a3b8" text-anchor="middle">Research, build, and scale AI-powered mobile apps across App Store &amp; Google Play</text>
+  </g>
+
+  <!-- ===== SECTION: 4-STAGE PROCESS FLOW ===== -->
+  <text x="60" y="170" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="14" font-weight="600" fill="#64748b" letter-spacing="2.5">THE ENGINE</text>
+  <line x1="60" y1="178" x2="1020" y2="178" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Stage 1: Discover -->
+  <g transform="translate(60, 195)" filter="url(#cs)">
+    <rect width="228" height="175" rx="14" fill="#10102a" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.35"/>
+    <rect width="228" height="3" rx="1.5" fill="#00d4ff" opacity="0.6"/>
+    <circle cx="24" cy="28" r="14" fill="#00d4ff" fill-opacity="0.12" stroke="#00d4ff" stroke-width="1"/>
+    <text x="24" y="33" font-family="'Inter','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#00d4ff" text-anchor="middle">1</text>
+    <text x="48" y="34" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#00d4ff">Discover</text>
+    <text x="18" y="60" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#cbd5e1">Analyze categories &amp; identify</text>
+    <text x="18" y="77" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#cbd5e1">demand-supply imbalance</text>
+    <line x1="18" y1="90" x2="210" y2="90" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="18" y="110" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">SensorTower &amp; AppAnnie</text>
+    <text x="18" y="127" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">Proprietary scoring framework</text>
+    <text x="18" y="144" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">Competitor monetization teardowns</text>
+    <text x="18" y="161" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">UA intelligence &amp; creative analysis</text>
+  </g>
+  <!-- Arrow 1→2 -->
+  <path d="M 295,282 L 310,282" stroke="#00d4ff" stroke-width="1.5" opacity="0.5" marker-end="url(#aC)"/>
+  <text x="303" y="278" font-family="'Inter',sans-serif" font-size="16" fill="#00d4ff" opacity="0.6">›</text>
+
+  <!-- Stage 2: Build -->
+  <g transform="translate(312, 195)" filter="url(#cs)">
+    <rect width="228" height="175" rx="14" fill="#10102a" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.35"/>
+    <rect width="228" height="3" rx="1.5" fill="#00d4ff" opacity="0.5"/>
+    <circle cx="24" cy="28" r="14" fill="#00d4ff" fill-opacity="0.12" stroke="#00d4ff" stroke-width="1"/>
+    <text x="24" y="33" font-family="'Inter','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#00d4ff" text-anchor="middle">2</text>
+    <text x="48" y="34" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#00d4ff">Design &amp; Build</text>
+    <text x="18" y="60" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#cbd5e1">Architect AI-enhanced iOS</text>
+    <text x="18" y="77" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#cbd5e1">&amp; Android applications</text>
+    <line x1="18" y1="90" x2="210" y2="90" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="18" y="110" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">AI chatbots &amp; NLP</text>
+    <text x="18" y="127" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">Computer vision integration</text>
+    <text x="18" y="144" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">Maps API &amp; adaptive UX</text>
+    <text x="18" y="161" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">Cross-platform (Swift/Kotlin)</text>
+  </g>
+  <text x="547" y="278" font-family="'Inter',sans-serif" font-size="16" fill="#00d4ff" opacity="0.6">›</text>
+
+  <!-- Stage 3: Monetize -->
+  <g transform="translate(564, 195)" filter="url(#cs)">
+    <rect width="228" height="175" rx="14" fill="#10102a" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.35"/>
+    <rect width="228" height="3" rx="1.5" fill="#00d4ff" opacity="0.4"/>
+    <circle cx="24" cy="28" r="14" fill="#00d4ff" fill-opacity="0.12" stroke="#00d4ff" stroke-width="1"/>
+    <text x="24" y="33" font-family="'Inter','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#00d4ff" text-anchor="middle">3</text>
+    <text x="48" y="34" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#00d4ff">Monetize</text>
+    <text x="18" y="60" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#cbd5e1">Multi-stream revenue with</text>
+    <text x="18" y="77" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#cbd5e1">A/B tested funnels</text>
+    <line x1="18" y1="90" x2="210" y2="90" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="18" y="110" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">Auto-renewable subscriptions</text>
+    <text x="18" y="127" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">Rewarded video &amp; interstitials</text>
+    <text x="18" y="144" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">IAP &amp; freemium-to-premium</text>
+    <text x="18" y="161" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">Dynamic &amp; regional pricing</text>
+  </g>
+  <text x="799" y="278" font-family="'Inter',sans-serif" font-size="16" fill="#00d4ff" opacity="0.6">›</text>
+
+  <!-- Stage 4: Scale -->
+  <g transform="translate(816, 195)" filter="url(#cs)">
+    <rect width="228" height="175" rx="14" fill="#10102a" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.35"/>
+    <rect width="228" height="3" rx="1.5" fill="#00d4ff" opacity="0.3"/>
+    <circle cx="24" cy="28" r="14" fill="#00d4ff" fill-opacity="0.12" stroke="#00d4ff" stroke-width="1"/>
+    <text x="24" y="33" font-family="'Inter','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#00d4ff" text-anchor="middle">4</text>
+    <text x="48" y="34" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#00d4ff">Scale</text>
+    <text x="18" y="60" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#cbd5e1">Deploy paid acquisition</text>
+    <text x="18" y="77" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#cbd5e1">&amp; ASO for growth</text>
+    <line x1="18" y1="90" x2="210" y2="90" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="18" y="110" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">Apple Search Ads &amp; Google UAC</text>
+    <text x="18" y="127" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">Meta &amp; TikTok UA campaigns</text>
+    <text x="18" y="144" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">ROAS-based bidding</text>
+    <text x="18" y="161" font-family="'Inter','Segoe UI',sans-serif" font-size="11.5" fill="#64748b">Review &amp; rating optimization</text>
+  </g>
+
+  <!-- ===== SECTION: PORTFOLIO + METRICS ===== -->
+  <text x="60" y="405" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="14" font-weight="600" fill="#64748b" letter-spacing="2.5">PORTFOLIO CATEGORIES</text>
+  <line x1="60" y1="413" x2="1020" y2="413" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Category pills row 1 -->
+  <g transform="translate(60, 425)">
+    <rect width="140" height="32" rx="16" fill="#00d4ff" fill-opacity="0.06" stroke="#00d4ff" stroke-width="0.7" stroke-opacity="0.3"/>
+    <text x="70" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#00d4ff" text-anchor="middle">AI Chatbots</text>
+  </g>
+  <g transform="translate(210, 425)">
+    <rect width="175" height="32" rx="16" fill="#00d4ff" fill-opacity="0.06" stroke="#00d4ff" stroke-width="0.7" stroke-opacity="0.3"/>
+    <text x="88" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#00d4ff" text-anchor="middle">Computer Vision</text>
+  </g>
+  <g transform="translate(395, 425)">
+    <rect width="180" height="32" rx="16" fill="#00d4ff" fill-opacity="0.06" stroke="#00d4ff" stroke-width="0.7" stroke-opacity="0.3"/>
+    <text x="90" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#00d4ff" text-anchor="middle">Maps &amp; Navigation</text>
+  </g>
+  <g transform="translate(585, 425)">
+    <rect width="160" height="32" rx="16" fill="#00d4ff" fill-opacity="0.06" stroke="#00d4ff" stroke-width="0.7" stroke-opacity="0.3"/>
+    <text x="80" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#00d4ff" text-anchor="middle">Utility &amp; Tools</text>
+  </g>
+  <g transform="translate(755, 425)">
+    <rect width="170" height="32" rx="16" fill="#00d4ff" fill-opacity="0.06" stroke="#00d4ff" stroke-width="0.7" stroke-opacity="0.3"/>
+    <text x="85" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#00d4ff" text-anchor="middle">Health &amp; Fitness</text>
+  </g>
+  <!-- Row 2 -->
+  <g transform="translate(60, 465)">
+    <rect width="140" height="32" rx="16" fill="#00d4ff" fill-opacity="0.06" stroke="#00d4ff" stroke-width="0.7" stroke-opacity="0.3"/>
+    <text x="70" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#00d4ff" text-anchor="middle">Education</text>
+  </g>
+  <g transform="translate(210, 465)">
+    <rect width="170" height="32" rx="16" fill="#00d4ff" fill-opacity="0.06" stroke="#00d4ff" stroke-width="0.7" stroke-opacity="0.3"/>
+    <text x="85" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#00d4ff" text-anchor="middle">Entertainment</text>
+  </g>
+  <g transform="translate(390, 465)">
+    <rect width="140" height="32" rx="16" fill="#00d4ff" fill-opacity="0.06" stroke="#00d4ff" stroke-width="0.7" stroke-opacity="0.3"/>
+    <text x="70" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#00d4ff" text-anchor="middle">Lifestyle</text>
+  </g>
+
+  <!-- Metrics -->
+  <g transform="translate(620, 465)">
+    <rect width="400" height="32" rx="8" fill="#0a0a1f" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="16" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#64748b">Demand</text>
+    <text x="80" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="12" font-weight="700" fill="#00d4ff">78</text>
+    <text x="120" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#64748b">Competition</text>
+    <text x="206" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="12" font-weight="700" fill="#22c55e">32</text>
+    <text x="240" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#64748b">Rev Potential</text>
+    <text x="330" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="12" font-weight="700" fill="#00d4ff">85</text>
+    <text x="360" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#64748b">Fit</text>
+    <text x="380" y="21" font-family="'Inter','Segoe UI',sans-serif" font-size="12" font-weight="700" fill="#00d4ff">91</text>
+  </g>
+
+  <!-- ===== SECTION: WHAT WE MASTER (THE LEARNING ENGINE) ===== -->
+  <text x="60" y="535" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="14" font-weight="600" fill="#64748b" letter-spacing="2.5">WHAT WE MASTER WITH EVERY APP WE SHIP</text>
+  <line x1="60" y1="543" x2="1020" y2="543" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- 5 mastery cards in a row -->
+  <g transform="translate(60, 555)">
+    <rect width="180" height="100" rx="12" fill="#10102a" stroke="#00d4ff" stroke-width="0.8" stroke-opacity="0.25"/>
+    <text x="90" y="30" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle">Marketing</text>
+    <text x="90" y="52" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">UA channels, creative</text>
+    <text x="90" y="68" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">testing, ASO, brand</text>
+    <text x="90" y="84" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">positioning at scale</text>
+  </g>
+  <g transform="translate(252, 555)">
+    <rect width="180" height="100" rx="12" fill="#10102a" stroke="#00d4ff" stroke-width="0.8" stroke-opacity="0.25"/>
+    <text x="90" y="30" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle">Monetization</text>
+    <text x="90" y="52" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Paywall design, price</text>
+    <text x="90" y="68" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">elasticity, LTV/CAC,</text>
+    <text x="90" y="84" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">conversion funnels</text>
+  </g>
+  <g transform="translate(444, 555)">
+    <rect width="180" height="100" rx="12" fill="#10102a" stroke="#00d4ff" stroke-width="0.8" stroke-opacity="0.25"/>
+    <text x="90" y="30" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle">Product</text>
+    <text x="90" y="52" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Feature prioritization,</text>
+    <text x="90" y="68" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">retention mechanics,</text>
+    <text x="90" y="84" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">engagement loops</text>
+  </g>
+  <g transform="translate(636, 555)">
+    <rect width="180" height="100" rx="12" fill="#10102a" stroke="#00d4ff" stroke-width="0.8" stroke-opacity="0.25"/>
+    <text x="90" y="30" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle">User Behavior</text>
+    <text x="90" y="52" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Session patterns,</text>
+    <text x="90" y="68" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">cohort analysis,</text>
+    <text x="90" y="84" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">churn prediction</text>
+  </g>
+  <g transform="translate(828, 555)">
+    <rect width="192" height="100" rx="12" fill="#10102a" stroke="#00d4ff" stroke-width="0.8" stroke-opacity="0.25"/>
+    <text x="96" y="30" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#f1f5f9" text-anchor="middle">Analytics</text>
+    <text x="96" y="52" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">GA4 event design,</text>
+    <text x="96" y="68" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">attribution, ROAS</text>
+    <text x="96" y="84" font-family="'Inter','Segoe UI',sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">measurement</text>
+  </g>
+
+  <!-- ===== SECTION: HOW THIS POWERS THE ECOSYSTEM ===== -->
+  <text x="60" y="695" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="14" font-weight="600" fill="#64748b" letter-spacing="2.5">HOW THIS POWERS THE ECOSYSTEM</text>
+  <line x1="60" y1="703" x2="1020" y2="703" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Connection to Agency -->
+  <g transform="translate(60, 715)" filter="url(#cs)">
+    <rect width="960" height="195" rx="16" fill="#10102a" stroke="#3b82f6" stroke-width="1.2" stroke-opacity="0.4"/>
+    <rect width="5" height="195" rx="2" fill="#3b82f6" opacity="0.7"/>
+
+    <!-- Icon -->
+    <g transform="translate(50, 40)">
+      <circle r="22" fill="#3b82f6" fill-opacity="0.1" stroke="#3b82f6" stroke-width="1"/>
+      <circle cx="0" cy="0" r="11" fill="none" stroke="#3b82f6" stroke-width="1.6"/>
+      <ellipse cx="0" cy="0" rx="6" ry="11" fill="none" stroke="#3b82f6" stroke-width="0.9"/>
+      <line x1="-11" y1="0" x2="11" y2="0" stroke="#3b82f6" stroke-width="0.7"/>
+    </g>
+    <text x="90" y="30" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="22" font-weight="700" fill="#3b82f6">Digital Agency</text>
+    <text x="90" y="55" font-family="'Inter','Segoe UI',sans-serif" font-size="16" fill="#f1f5f9">We don't just advise clients — we've scaled our own products.</text>
+
+    <!-- 3 specific impacts -->
+    <g transform="translate(90, 75)">
+      <circle cx="8" cy="10" r="4" fill="#3b82f6" fill-opacity="0.2" stroke="#3b82f6" stroke-width="0.8"/>
+      <text x="20" y="15" font-family="'Inter','Segoe UI',sans-serif" font-size="14" fill="#cbd5e1">Real monetization experience means we build revenue-first products for clients</text>
+    </g>
+    <g transform="translate(90, 105)">
+      <circle cx="8" cy="10" r="4" fill="#3b82f6" fill-opacity="0.2" stroke="#3b82f6" stroke-width="0.8"/>
+      <text x="20" y="15" font-family="'Inter','Segoe UI',sans-serif" font-size="14" fill="#cbd5e1">UA expertise transfers directly to client performance marketing campaigns</text>
+    </g>
+    <g transform="translate(90, 135)">
+      <circle cx="8" cy="10" r="4" fill="#3b82f6" fill-opacity="0.2" stroke="#3b82f6" stroke-width="0.8"/>
+      <text x="20" y="15" font-family="'Inter','Segoe UI',sans-serif" font-size="14" fill="#cbd5e1">Product thinking (retention, engagement loops) shapes better client architectures</text>
+    </g>
+    <text x="90" y="175" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#94a3b8" font-style="italic">Every app we ship makes our agency sharper.</text>
+  </g>
+
+  <!-- Connection to Growlytics -->
+  <g transform="translate(60, 925)" filter="url(#cs)">
+    <rect width="960" height="195" rx="16" fill="#10102a" stroke="#7c3aed" stroke-width="1.2" stroke-opacity="0.4"/>
+    <rect width="5" height="195" rx="2" fill="#7c3aed" opacity="0.7"/>
+
+    <g transform="translate(50, 40)">
+      <circle r="22" fill="#7c3aed" fill-opacity="0.1" stroke="#7c3aed" stroke-width="1"/>
+      <rect x="-10" y="2" width="5" height="10" rx="1.5" fill="#7c3aed" opacity="0.6"/>
+      <rect x="-3" y="-4" width="5" height="16" rx="1.5" fill="#7c3aed" opacity="0.75"/>
+      <rect x="4" y="-10" width="5" height="22" rx="1.5" fill="#7c3aed" opacity="0.9"/>
+    </g>
+    <text x="90" y="30" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="22" font-weight="700" fill="#7c3aed">Growlytics AI</text>
+    <text x="90" y="55" font-family="'Inter','Segoe UI',sans-serif" font-size="16" fill="#f1f5f9">Every app is a live data laboratory feeding our AI platform.</text>
+
+    <g transform="translate(90, 75)">
+      <circle cx="8" cy="10" r="4" fill="#7c3aed" fill-opacity="0.2" stroke="#7c3aed" stroke-width="0.8"/>
+      <text x="20" y="15" font-family="'Inter','Segoe UI',sans-serif" font-size="14" fill="#cbd5e1">Real user behavior data across categories trains more generalized AI models</text>
+    </g>
+    <g transform="translate(90, 105)">
+      <circle cx="8" cy="10" r="4" fill="#7c3aed" fill-opacity="0.2" stroke="#7c3aed" stroke-width="0.8"/>
+      <text x="20" y="15" font-family="'Inter','Segoe UI',sans-serif" font-size="14" fill="#cbd5e1">GA4 event structures from our apps become templates for the SaaS platform</text>
+    </g>
+    <g transform="translate(90, 135)">
+      <circle cx="8" cy="10" r="4" fill="#7c3aed" fill-opacity="0.2" stroke="#7c3aed" stroke-width="0.8"/>
+      <text x="20" y="15" font-family="'Inter','Segoe UI',sans-serif" font-size="14" fill="#cbd5e1">Monetization experiments reveal the right questions a SaaS analytics tool must ask</text>
+    </g>
+    <text x="90" y="175" font-family="'Inter','Segoe UI',sans-serif" font-size="13" fill="#94a3b8" font-style="italic">First-party data is the ultimate competitive moat.</text>
+  </g>
+
+  <!-- ===== FOOTER ===== -->
+  <line x1="60" y1="1165" x2="1020" y2="1165" stroke="url(#accentH)" stroke-width="1" opacity="0.25"/>
+  <!-- Flywheel badge -->
+  <g transform="translate(540, 1210)">
+    <circle r="30" fill="#0a0a1f" stroke="url(#accentH)" stroke-width="1.2"/>
+    <path d="M -6,-10 A 12,12 0 0,1 10,-2" fill="none" stroke="#00d4ff" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M 10,-2 L 7,-7 M 10,-2 L 5,1" stroke="#00d4ff" stroke-width="1" stroke-linecap="round"/>
+    <path d="M 6,10 A 12,12 0 0,1 -10,2" fill="none" stroke="#7c3aed" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M -10,2 L -7,7 M -10,2 L -5,-1" stroke="#7c3aed" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  <text x="540" y="1270" font-family="'Space Grotesk','Inter','Segoe UI',sans-serif" font-size="20" font-weight="600" fill="url(#accentGrad)" text-anchor="middle">Where AI Meets Growth</text>
+  <text x="540" y="1296" font-family="'Inter','Segoe UI',sans-serif" font-size="14" fill="#64748b" text-anchor="middle">alephiclabs.com</text>
+  <rect x="0" y="1340" width="1080" height="10" fill="url(#accentH)" opacity="0.1"/>
+</svg>

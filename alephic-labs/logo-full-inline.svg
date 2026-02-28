@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 80" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ===== LOGOMARK (Compact) ===== -->
+  <g transform="translate(0, 0)">
+    <rect width="80" height="80" rx="20" fill="#0a0a1f"/>
+    <rect x="1" y="1" width="78" height="78" rx="19" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.3"/>
+
+    <!-- Main diagonal -->
+    <line x1="26" y1="58" x2="54" y2="22" stroke="url(#grad)" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Upper-left curve -->
+    <path d="M 45 31 Q 34 20, 24 24" stroke="#00d4ff" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Lower-right curve -->
+    <path d="M 35 49 Q 46 60, 56 56" stroke="#7c3aed" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Dots -->
+    <circle cx="24" cy="24" r="3" fill="#00d4ff"/>
+    <circle cx="56" cy="56" r="3" fill="#7c3aed"/>
+  </g>
+
+  <!-- ===== WORDMARK (Single line) ===== -->
+  <text x="100" y="52" font-family="'Space Grotesk', 'Inter', -apple-system, sans-serif" font-size="36" font-weight="700" fill="url(#grad)" letter-spacing="-0.5">Alephic<tspan> Labs</tspan></text>
+</svg>

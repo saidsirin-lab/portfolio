@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="grad-r" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ===== LOGOMARK (Aleph Icon) ===== -->
+  <g>
+    <!-- Rounded square background -->
+    <rect width="120" height="120" rx="28" fill="#0a0a1f"/>
+    <rect x="1" y="1" width="118" height="118" rx="27" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.3"/>
+
+    <!-- Main diagonal stroke -->
+    <line x1="38" y1="88" x2="82" y2="32" stroke="url(#grad)" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Upper-left curve (upper yod) -->
+    <path d="M 68 46 Q 52 30, 36 36" stroke="#00d4ff" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Lower-right curve (lower yod) -->
+    <path d="M 52 74 Q 68 90, 84 84" stroke="#7c3aed" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Accent dots -->
+    <circle cx="36" cy="36" r="4" fill="#00d4ff"/>
+    <circle cx="84" cy="84" r="4" fill="#7c3aed"/>
+  </g>
+
+  <!-- ===== WORDMARK ===== -->
+  <g>
+    <!-- "Alephic" -->
+    <text x="145" y="64" font-family="'Space Grotesk', 'Inter', -apple-system, sans-serif" font-size="38" font-weight="700" fill="url(#grad)" letter-spacing="-0.5">Alephic</text>
+
+    <!-- "Labs" in gradient -->
+    <text x="145" y="100" font-family="'Space Grotesk', 'Inter', -apple-system, sans-serif" font-size="38" font-weight="700" fill="url(#grad)" letter-spacing="-0.5">Labs</text>
+  </g>
+</svg>

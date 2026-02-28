@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="#0a0a1f"/>
+
+  <!-- Main diagonal -->
+  <line x1="20" y1="46" x2="44" y2="18" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Upper-left curve -->
+  <path d="M 36 25 Q 27 16, 19 19" stroke="#00d4ff" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Lower-right curve -->
+  <path d="M 28 39 Q 37 48, 45 45" stroke="#7c3aed" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Dots -->
+  <circle cx="19" cy="19" r="2.5" fill="#00d4ff"/>
+  <circle cx="45" cy="45" r="2.5" fill="#7c3aed"/>
+</svg>
